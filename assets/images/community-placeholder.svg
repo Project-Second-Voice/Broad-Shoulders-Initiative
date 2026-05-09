@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">Community placeholder</title>
+  <desc id="desc">Abstract earthy shapes used as a temporary community image placeholder.</desc>
+  <rect width="900" height="700" fill="#f6efe2"/>
+  <path d="M120 490c100-135 220-185 360-150s230 3 300-108v310H120z" fill="#d8c0a4"/>
+  <circle cx="256" cy="255" r="86" fill="#77785a" opacity=".85"/>
+  <circle cx="445" cy="220" r="58" fill="#606547" opacity=".8"/>
+  <circle cx="610" cy="286" r="76" fill="#b29072" opacity=".72"/>
+  <path d="M176 557c141-88 275-119 402-92 87 18 149 10 210-26" fill="none" stroke="#604a36" stroke-width="9" opacity=".45"/>
+</svg>
