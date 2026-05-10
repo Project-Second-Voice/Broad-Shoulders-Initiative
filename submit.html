@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Submit a future anonymous or named story to Broad Shoulders Initiative."
+    />
     <title>Submit a Story | Broad Shoulders Initiative</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/images/logo-mark.jpg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
     <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="index.html"><img src="assets/images/broad-shoulders-logo.png" alt="" class="brand-mark" /><span>Broad Shoulders Initiative</span></a>
+        <a class="brand" href="index.html"><img src="assets/images/logo-mark.jpg" alt="" class="brand-mark" width="44" height="44" decoding="async" /><span>Broad Shoulders Initiative</span></a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="nav-toggle-line"></span><span class="sr-only">Open navigation</span></button>
         <div class="nav-links" id="nav-links">
           <a href="about.html">About</a>
@@ -31,13 +36,15 @@
         <p>Stories may be submitted anonymously when the form is added. Submissions should be reviewed before publication.</p>
       </section>
       <section class="form-placeholder">
-        <h2>Future Story Submission Form</h2>
-        <p>
-          This space is reserved for a Google Form or another simple submission form. Keep the form optional and clear
-          about anonymity, publication consent, and review.
-        </p>
-        <!-- Replace # with your Google Form link or embed an iframe here when the form is ready. -->
-        <a class="button primary" href="#">Google Form Coming Soon</a>
+        <div class="form-placeholder-inner">
+          <h2>Future Story Submission Form</h2>
+          <p>
+            This space is reserved for a Google Form or another simple submission form. Keep the form optional and clear
+            about anonymity, publication consent, and review.
+          </p>
+          <!-- Replace this placeholder with your Google Form link or iframe when the form is ready. -->
+          <span class="button primary placeholder" aria-disabled="true">Google Form Coming Soon</span>
+        </div>
       </section>
       <section class="submission-guidelines">
         <h2>Suggested Guidelines</h2>
@@ -50,6 +57,6 @@
       </section>
     </main>
     <footer class="site-footer"><p>Broad Shoulders Initiative</p><p>Update the submission form link when ready.</p></footer>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
