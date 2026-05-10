@@ -1,6 +1,6 @@
 # Broad Shoulders Initiative
 
-A clean static website for the youth-led Broad Shoulders Initiative.
+A clean static website for the youth-led Broad Shoulders Initiative, a not-for-profit initiative dedicated to spreading awareness on mental health for students and creating an inclusive community for sharing challenges such as body image, academic stress, sports-related injury, and family situations.
 
 ## Pages
 
