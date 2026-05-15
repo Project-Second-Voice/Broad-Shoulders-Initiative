@@ -47,4 +47,4 @@ After pushing the repository to GitHub:
 
 ## Places To Update Later
 
-The HTML contains comments near the image placeholders, form integration, email address, social links, and resource links. Future standalone stories can live in the `stories/` folder.
+The HTML contains comments near the image placeholders, story cards, form integration, email address, social links, and resource links. Future standalone stories can live in the `stories/` folder. Start by copying `stories/story-template.html`, then add the new post card to `stories.html`.
