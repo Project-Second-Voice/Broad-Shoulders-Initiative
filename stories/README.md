@@ -13,6 +13,8 @@ Use this folder for individual Broad Shoulders Initiative story or blog pages.
 ## Current Example
 
 - `learning-to-feel-at-home.html`: placeholder example detail page connected from the Stories / Blog index.
+- `are-you-at-your-moms.html`: published story slug for "Are You at Your Mom's?"
+- `you-come-before-the-athlete.html`: published story slug for "You Come Before The Athlete."
 
 ## Image Notes
 

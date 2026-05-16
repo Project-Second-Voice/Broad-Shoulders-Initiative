@@ -753,6 +753,13 @@ h3 {
   object-fit: cover;
 }
 
+.story-detail-hero.landscape-feature img {
+  max-height: none;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center center;
+}
+
 .story-detail-hero.portrait-feature {
   background: linear-gradient(135deg, rgba(255, 250, 241, 0.72), rgba(216, 192, 164, 0.2));
 }
