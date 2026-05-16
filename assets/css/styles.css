@@ -197,7 +197,6 @@ button:focus-visible {
   white-space: nowrap;
 }
 
-.site-shell,
 .hero,
 .statement-section,
 .feature-band,
@@ -206,11 +205,10 @@ button:focus-visible {
 .latest-section,
 .cta-section,
 .page-hero,
-.prose-section,
 .blog-index,
 .notice,
 .resource-grid,
-.form-placeholder,
+.form-panel,
 .submission-guidelines,
 .contact-panel {
   width: min(1120px, calc(100% - 32px));
@@ -256,11 +254,10 @@ h3 {
 .feature-panel h2,
 .notice h2,
 .resource-grid h2,
-.form-placeholder h2,
+.form-panel h2,
 .submission-guidelines h2,
 .contact-panel h2,
-.blog-entry h2,
-.prose-block h2 {
+.blog-entry h2 {
   font-size: 2.25rem;
 }
 
@@ -280,10 +277,9 @@ h3 {
 .split-copy p,
 .page-hero p,
 .cta-section p,
-.prose-section p,
 .notice p,
 .resource-grid p,
-.form-placeholder p,
+.form-panel p,
 .submission-guidelines li,
 .contact-panel p,
 .blog-entry p {
@@ -297,8 +293,7 @@ h3 {
   font-size: 1.18rem;
 }
 
-.hero-actions,
-.button-row {
+.hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
@@ -333,21 +328,11 @@ h3 {
   color: var(--moss);
 }
 
-.button.placeholder {
-  border-style: dashed;
-  cursor: default;
-  opacity: 0.82;
-}
-
-.button.placeholder:hover {
-  transform: none;
-}
-
 .hero-logo-wrap,
 .image-note,
 .blog-entry,
 .resource-grid article,
-.form-placeholder,
+.form-panel,
 .submission-guidelines,
 .contact-panel,
 .notice {
@@ -464,11 +449,10 @@ h3 {
 .latest-section,
 .story-timeline-section,
 .page-hero,
-.prose-section,
 .blog-index,
 .notice,
 .resource-grid,
-.form-placeholder,
+.form-panel,
 .submission-guidelines,
 .contact-panel {
   padding: 4.5rem 0;
@@ -539,25 +523,6 @@ h3 {
 .cta-section .button.primary {
   background: var(--soft-white);
   color: var(--moss);
-}
-
-.prose-section {
-  max-width: 880px;
-  padding-top: 1rem;
-}
-
-.prose-block {
-  padding: 2rem 0;
-  border-top: 1px solid var(--line);
-}
-
-.prose-block:first-child {
-  border-top: 0;
-}
-
-.prose-block p {
-  max-width: 760px;
-  margin: 1rem 0 0;
 }
 
 .story-timeline-section {
@@ -717,20 +682,6 @@ h3 {
   margin-top: 0.8rem;
 }
 
-.editorial-note {
-  padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
-}
-
-.editorial-note code {
-  padding: 0.12rem 0.32rem;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  background: rgba(255, 250, 241, 0.7);
-  color: var(--bark);
-  font-size: 0.92em;
-}
-
 .story-detail {
   width: min(860px, calc(100% - 32px));
   margin-inline: auto;
@@ -882,7 +833,7 @@ h3 {
 }
 
 .resource-grid article,
-.form-placeholder,
+.form-panel,
 .submission-guidelines,
 .contact-panel {
   padding: 2rem;
@@ -896,16 +847,16 @@ h3 {
 }
 
 .resource-list a,
-.inline-link {
+.site-footer a {
   color: var(--moss);
   font-weight: 750;
 }
 
-.form-placeholder {
+.form-panel {
   text-align: center;
 }
 
-.form-placeholder-inner {
+.form-panel-inner {
   max-width: 660px;
   margin: 0 auto;
 }
@@ -943,10 +894,6 @@ address a,
   color: var(--moss);
   font-weight: 750;
   overflow-wrap: anywhere;
-}
-
-.contact-links span {
-  color: var(--olive);
 }
 
 .site-footer {
@@ -1036,7 +983,7 @@ address a,
     overflow: hidden;
     padding: 0 0.75rem;
     border: 1px solid transparent;
-    background: rgba(255, 250, 241, 0.97);
+    background: var(--soft-white);
     box-shadow: none;
     opacity: 0;
     pointer-events: none;
@@ -1162,7 +1109,6 @@ address a,
     height: 40px;
   }
 
-  .site-shell,
   .hero,
   .statement-section,
   .feature-band,
@@ -1171,11 +1117,10 @@ address a,
   .latest-section,
   .cta-section,
   .page-hero,
-  .prose-section,
   .blog-index,
   .notice,
   .resource-grid,
-  .form-placeholder,
+  .form-panel,
   .submission-guidelines,
   .contact-panel {
     width: min(100% - 24px, 1120px);
@@ -1204,11 +1149,10 @@ address a,
   .feature-panel h2,
   .notice h2,
   .resource-grid h2,
-  .form-placeholder h2,
+  .form-panel h2,
   .submission-guidelines h2,
   .contact-panel h2,
   .blog-entry h2,
-  .prose-block h2,
   .timeline-copy h3 {
     font-size: 1.9rem;
   }
@@ -1218,10 +1162,9 @@ address a,
   .split-copy p,
   .page-hero p,
   .cta-section p,
-  .prose-section p,
   .notice p,
   .resource-grid p,
-  .form-placeholder p,
+  .form-panel p,
   .submission-guidelines li,
   .contact-panel p,
   .blog-entry p {
@@ -1261,11 +1204,10 @@ address a,
   .latest-section,
   .story-detail,
   .page-hero,
-  .prose-section,
   .blog-index,
   .notice,
   .resource-grid,
-  .form-placeholder,
+  .form-panel,
   .submission-guidelines,
   .contact-panel {
     padding-top: 3rem;
@@ -1276,7 +1218,7 @@ address a,
   .cta-section,
   .resource-grid article,
   .story-support,
-  .form-placeholder,
+  .form-panel,
   .submission-guidelines,
   .contact-panel,
   .notice {

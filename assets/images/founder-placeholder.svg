@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 880" role="img" aria-labelledby="title desc">
-  <title id="title">Founder placeholder</title>
-  <desc id="desc">A simple warm abstract portrait placeholder.</desc>
-  <rect width="720" height="880" fill="#eee2cf"/>
-  <circle cx="360" cy="275" r="122" fill="#77785a" opacity=".82"/>
-  <path d="M156 785c33-202 127-303 204-303s171 101 204 303H156z" fill="#d8c0a4"/>
-  <path d="M206 785c37-135 88-208 154-218 66 10 117 83 154 218H206z" fill="#606547" opacity=".82"/>
-  <path d="M120 120h480v640H120z" fill="none" stroke="#604a36" stroke-width="8" opacity=".3"/>
-</svg>

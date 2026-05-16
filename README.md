@@ -15,16 +15,13 @@ A clean static website for the youth-led Broad Shoulders Initiative, a not-for-p
 
 - `assets/css/styles.css`: shared responsive styling.
 - `assets/js/script.js`: mobile navigation behavior.
-- `assets/images/`: optimized logo files and placeholder visuals.
-- `stories/`: future standalone story or blog post pages.
+- `assets/images/`: optimized logo and story visuals.
+- `stories/`: published standalone story pages.
 
-## Placeholder Assets To Replace
+## Current Story Pages
 
-- `assets/images/founder-placeholder.svg`: replace with a real founder image of Jonathan Wang.
-- `assets/images/community-placeholder.svg`: replace with a calm community, event, or background visual.
-- `assets/images/story-placeholder.svg`: replace per post when real story/blog images are available.
-- `assets/images/logo-mark.jpg`: optimized small logo for the navigation.
-- `assets/images/logo-hero.jpg`: optimized larger logo for the homepage hero.
+- `stories/are-you-at-your-moms.html`
+- `stories/you-come-before-the-athlete.html`
 
 ## Easy Preview
 
@@ -44,7 +41,3 @@ After pushing the repository to GitHub:
 2. Go to Pages.
 3. Select the `main` branch and root folder.
 4. Save and wait for GitHub Pages to publish.
-
-## Places To Update Later
-
-The HTML contains comments near the image placeholders, story cards, form integration, email address, social links, and resource links. Future standalone stories can live in the `stories/` folder. Start by copying `stories/story-template.html`, then add the new post card to `stories.html`.

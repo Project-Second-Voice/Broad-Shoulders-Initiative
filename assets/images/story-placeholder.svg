@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
-  <title id="title">Story placeholder</title>
-  <desc id="desc">Abstract page-like shapes in calm earthy colors.</desc>
-  <rect width="800" height="600" fill="#fffaf1"/>
-  <rect x="122" y="96" width="430" height="360" rx="2" fill="#eee2cf" stroke="#604a36" stroke-opacity=".22" stroke-width="6"/>
-  <path d="M218 185h390M218 255h310M218 325h360" stroke="#606547" stroke-width="20" stroke-linecap="round" opacity=".65"/>
-  <circle cx="595" cy="404" r="82" fill="#d8c0a4" opacity=".85"/>
-  <path d="M575 472c-20-105 12-182 96-230" stroke="#77785a" stroke-width="18" stroke-linecap="round" fill="none"/>
-</svg>
