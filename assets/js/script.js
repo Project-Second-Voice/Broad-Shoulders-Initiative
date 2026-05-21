@@ -27,4 +27,8 @@ if (navToggle && navLinks) {
     if (event.target.closest(".nav")) return;
     setMenu(false);
   });
+
+  window.addEventListener("resize", () => {
+    if (window.matchMedia("(min-width: 861px)").matches) setMenu(false);
+  });
 }

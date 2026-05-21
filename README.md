@@ -20,8 +20,19 @@ A clean static website for the youth-led Broad Shoulders Initiative, a not-for-p
 
 ## Current Story Pages
 
+- `stories/doubt-and-performance-anxiety.html`
+- `stories/broad-shoulders.html`
 - `stories/are-you-at-your-moms.html`
 - `stories/you-come-before-the-athlete.html`
+
+## Maintenance Notes
+
+- Keep shared visual rules in `assets/css/styles.css` so new pages inherit the same calm editorial style.
+- Add future top-level pages by copying an existing page shell, updating the active nav item, and adding one nav link in each page header.
+- The nav spacing is prepared for one additional future page link without needing a redesign.
+- Future partner logos, descriptions, and links can live under `assets/images/` and a new top-level page when that content is approved.
+- Keep all story pages linked from `stories.html`, and add any story-specific support links inside that story's `Resources & Support` section.
+- Do not publish submission content until it has been reviewed for consent, privacy, identifying details, and safety.
 
 ## Easy Preview
 

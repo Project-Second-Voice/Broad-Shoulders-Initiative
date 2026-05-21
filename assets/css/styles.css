@@ -14,6 +14,8 @@
   --shadow-soft: 0 12px 30px rgba(74, 62, 45, 0.08);
   --serif: "Cormorant Garamond", Georgia, serif;
   --sans: "Inter", Arial, sans-serif;
+  --content-width: min(1120px, calc(100% - 32px));
+  --nav-width: min(1180px, calc(100% - 32px));
 }
 
 * {
@@ -45,6 +47,15 @@ img {
 
 a {
   color: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+a {
+  overflow-wrap: break-word;
 }
 
 a:focus-visible,
@@ -83,7 +94,7 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: min(1180px, calc(100% - 32px));
+  width: var(--nav-width);
   margin: 0 auto;
   padding: 0.75rem 0;
 }
@@ -111,10 +122,12 @@ button:focus-visible {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: clamp(0.65rem, 1.2vw, 1rem);
   font-size: 0.92rem;
   font-weight: 650;
 }
+
+/* Navigation spacing is intentionally flexible so a future Partnerships link can be added cleanly. */
 
 .nav-links a {
   position: relative;
@@ -211,7 +224,7 @@ button:focus-visible {
 .form-panel,
 .submission-guidelines,
 .contact-panel {
-  width: min(1120px, calc(100% - 32px));
+  width: var(--content-width);
   margin-inline: auto;
 }
 
@@ -317,6 +330,19 @@ h3 {
 
 .button:hover {
   transform: translateY(-2px);
+}
+
+.text-link:focus-visible,
+.back-link:focus-visible,
+.post-row:focus-visible,
+.support-card:focus-visible,
+.resource-list a:focus-visible,
+.site-footer a:focus-visible,
+.contact-links a:focus-visible,
+address a:focus-visible {
+  outline: 3px solid rgba(89, 96, 68, 0.42);
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 .button.primary {
@@ -707,6 +733,7 @@ h3 {
   max-height: 520px;
   border-radius: 6px;
   object-fit: cover;
+  background: rgba(239, 227, 209, 0.5);
 }
 
 .story-detail-hero.landscape-feature img {
@@ -777,6 +804,14 @@ h3 {
 
 .story-support p {
   margin: 0;
+}
+
+.safety-note {
+  padding: 0.85rem 1rem;
+  border-left: 3px solid rgba(89, 96, 68, 0.48);
+  background: rgba(255, 250, 241, 0.48);
+  color: var(--bark);
+  font-size: 0.96rem;
 }
 
 .support-links {
@@ -950,6 +985,20 @@ address a,
 }
 
 @media (max-width: 1040px) {
+  .nav {
+    align-items: flex-start;
+  }
+
+  .brand span {
+    max-width: 15rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 560px;
+  }
+
   .hero {
     grid-template-columns: minmax(0, 1fr) 340px;
     gap: 2.5rem;
@@ -973,6 +1022,10 @@ address a,
 }
 
 @media (max-width: 860px) {
+  .nav {
+    align-items: center;
+  }
+
   .nav-toggle {
     display: block;
   }
@@ -1100,35 +1153,23 @@ address a,
 }
 
 @media (max-width: 560px) {
+  :root {
+    --content-width: min(100% - 24px, 1120px);
+    --nav-width: min(100% - 24px, 1120px);
+  }
+
   .nav {
-    width: min(100% - 24px, 1120px);
+    width: var(--nav-width);
   }
 
   .brand span {
-    max-width: 12rem;
+    max-width: min(11.25rem, calc(100vw - 112px));
   }
 
   .brand-mark {
     flex-basis: 40px;
     width: 40px;
     height: 40px;
-  }
-
-  .hero,
-  .statement-section,
-  .feature-band,
-  .split-section,
-  .story-timeline-section,
-  .latest-section,
-  .cta-section,
-  .page-hero,
-  .blog-index,
-  .notice,
-  .resource-grid,
-  .form-panel,
-  .submission-guidelines,
-  .contact-panel {
-    width: min(100% - 24px, 1120px);
   }
 
   .hero {
@@ -1184,6 +1225,10 @@ address a,
     padding: 0.7rem;
   }
 
+  .story-detail {
+    width: var(--content-width);
+  }
+
   .story-detail-hero img,
   .story-detail-hero.portrait-feature img {
     max-height: none;
@@ -1228,5 +1273,20 @@ address a,
   .contact-panel,
   .notice {
     padding-inline: 1.15rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero h1 {
+    font-size: 3.05rem;
+  }
+
+  .page-hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .brand {
+    gap: 0.55rem;
+    font-size: 1rem;
   }
 }

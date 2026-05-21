@@ -11,6 +11,8 @@ Use this folder for published Broad Shoulders Initiative story or blog pages.
 
 ## Published Stories
 
+- `doubt-and-performance-anxiety.html`: published story slug for "Doubt and Performance Anxiety."
+- `broad-shoulders.html`: published story slug for "Broad Shoulders."
 - `are-you-at-your-moms.html`: published story slug for "Are You at Your Mom's?"
 - `you-come-before-the-athlete.html`: published story slug for "You Come Before The Athlete."
 
@@ -18,3 +20,4 @@ Use this folder for published Broad Shoulders Initiative story or blog pages.
 
 - Add new story images to `../assets/images/`.
 - Keep alt text specific and useful, or use an empty alt attribute only when the image is purely decorative.
+- Prefer compressed `.jpg`, `.jpeg`, or `.webp` images sized for web use before adding them to the repository.
