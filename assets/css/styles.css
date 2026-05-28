@@ -221,6 +221,10 @@ button:focus-visible {
 .blog-index,
 .notice,
 .resource-grid,
+.partnership-intro,
+.partner-spotlight,
+.partnership-matters,
+.partner-resource-section,
 .form-panel,
 .submission-guidelines,
 .contact-panel {
@@ -267,6 +271,9 @@ h3 {
 .feature-panel h2,
 .notice h2,
 .resource-grid h2,
+.partner-spotlight h2,
+.partnership-matters h2,
+.partner-resource-section h2,
 .form-panel h2,
 .submission-guidelines h2,
 .contact-panel h2,
@@ -292,6 +299,9 @@ h3 {
 .cta-section p,
 .notice p,
 .resource-grid p,
+.partner-copy p,
+.partnership-matters p,
+.partner-resource-card small,
 .form-panel p,
 .submission-guidelines li,
 .contact-panel p,
@@ -336,6 +346,7 @@ h3 {
 .back-link:focus-visible,
 .post-row:focus-visible,
 .support-card:focus-visible,
+.partner-resource-card:focus-visible,
 .resource-list a:focus-visible,
 .site-footer a:focus-visible,
 .contact-links a:focus-visible,
@@ -358,6 +369,9 @@ address a:focus-visible {
 .image-note,
 .blog-entry,
 .resource-grid article,
+.partner-spotlight,
+.partner-principles,
+.partner-resource-card,
 .form-panel,
 .submission-guidelines,
 .contact-panel,
@@ -478,6 +492,10 @@ address a:focus-visible {
 .blog-index,
 .notice,
 .resource-grid,
+.partnership-intro,
+.partner-spotlight,
+.partnership-matters,
+.partner-resource-section,
 .form-panel,
 .submission-guidelines,
 .contact-panel {
@@ -908,6 +926,126 @@ address a:focus-visible {
   font-weight: 750;
 }
 
+.partnerships-hero h1 {
+  max-width: 720px;
+}
+
+.partnership-intro {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.partner-spotlight {
+  display: grid;
+  gap: 2.2rem;
+  padding: 2.5rem;
+  border-radius: 8px;
+  background: rgba(255, 250, 241, 0.56);
+}
+
+.partner-spotlight-header {
+  max-width: 760px;
+}
+
+.partner-spotlight h2 {
+  font-size: 3.2rem;
+}
+
+.partner-subheading {
+  margin: 0.55rem 0 0;
+  color: var(--moss);
+  font-family: var(--serif);
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.partner-spotlight-grid,
+.partnership-matters {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.62fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.partner-copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.partner-copy p,
+.partnership-matters p {
+  margin: 0;
+}
+
+.partner-principles {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: rgba(239, 227, 209, 0.58);
+}
+
+.partner-principles h3 {
+  font-size: 1.7rem;
+}
+
+.partner-principles ul {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--bark);
+}
+
+.partnership-matters {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.partnership-matters-copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.partner-resource-section {
+  padding-top: 2rem;
+}
+
+.partner-resource-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.partner-resource-card {
+  display: grid;
+  align-content: start;
+  gap: 0.65rem;
+  min-height: 100%;
+  padding: 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.partner-resource-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--line-strong);
+  background: rgba(255, 250, 241, 0.82);
+  box-shadow: var(--shadow-soft);
+}
+
+.partner-resource-card span {
+  color: var(--moss);
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+.partner-resource-card small {
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
 .form-panel {
   text-align: center;
 }
@@ -954,6 +1092,7 @@ address a,
 
 .site-footer {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
   width: min(1120px, calc(100% - 32px));
@@ -966,6 +1105,22 @@ address a,
 
 .site-footer p {
   margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  justify-content: flex-end;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.22rem;
 }
 
 .reveal {
@@ -1022,6 +1177,10 @@ address a,
 
   .hero h1 {
     font-size: 5.5rem;
+  }
+
+  .partner-resource-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .page-hero h1 {
@@ -1088,10 +1247,13 @@ address a,
   .statement-grid,
   .feature-band,
   .split-section,
+  .partner-spotlight-grid,
+  .partnership-matters,
   .timeline-item,
   .timeline-item:nth-child(even),
   .blog-entry,
   .resource-grid,
+  .partner-resource-grid,
   .support-links,
   .contact-panel {
     grid-template-columns: 1fr;
@@ -1164,7 +1326,12 @@ address a,
   }
 
   .site-footer {
+    align-items: flex-start;
     flex-direction: column;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
   }
 }
 
@@ -1226,6 +1393,9 @@ address a,
   .cta-section p,
   .notice p,
   .resource-grid p,
+  .partner-copy p,
+  .partnership-matters p,
+  .partner-resource-card small,
   .form-panel p,
   .submission-guidelines li,
   .contact-panel p,
@@ -1273,6 +1443,10 @@ address a,
   .blog-index,
   .notice,
   .resource-grid,
+  .partnership-intro,
+  .partner-spotlight,
+  .partnership-matters,
+  .partner-resource-section,
   .form-panel,
   .submission-guidelines,
   .contact-panel {
@@ -1283,6 +1457,9 @@ address a,
   .statement-section.muted,
   .cta-section,
   .resource-grid article,
+  .partner-spotlight,
+  .partner-principles,
+  .partner-resource-card,
   .story-support,
   .form-panel,
   .submission-guidelines,
