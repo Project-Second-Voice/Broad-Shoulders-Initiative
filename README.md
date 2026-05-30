@@ -20,6 +20,9 @@ A clean static website for the youth-led Broad Shoulders Initiative, a not-for-p
 
 ## Current Story Pages
 
+- `stories/communication.html`
+- `stories/enjoying-the-music.html`
+- `stories/problems.html`
 - `stories/doubt-and-performance-anxiety.html`
 - `stories/broad-shoulders.html`
 - `stories/are-you-at-your-moms.html`
