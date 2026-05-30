@@ -1001,6 +1001,25 @@ address a:focus-visible {
   border-bottom: 1px solid var(--line);
 }
 
+.partnership-matters-visual {
+  display: grid;
+  place-items: center;
+  width: min(100%, 20rem);
+  margin: clamp(1.5rem, 4vw, 2.75rem) 0 0;
+  padding: clamp(1rem, 2.6vw, 1.45rem);
+  border: 1px solid rgba(89, 96, 68, 0.18);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 241, 0.84), rgba(239, 227, 209, 0.46)),
+    var(--soft-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.partnership-matters-visual img {
+  width: min(100%, 14.0625rem);
+  border-radius: 6px;
+}
+
 .partnership-matters-copy {
   display: grid;
   gap: 1rem;
@@ -1431,6 +1450,11 @@ address a,
 
   .button {
     width: 100%;
+  }
+
+  .partnership-matters-visual {
+    width: min(100%, 17rem);
+    margin-inline: auto;
   }
 
   .statement-section,
