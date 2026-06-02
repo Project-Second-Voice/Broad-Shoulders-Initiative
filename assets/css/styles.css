@@ -223,6 +223,7 @@ button:focus-visible {
 .resource-grid,
 .partnership-intro,
 .partner-spotlight,
+.partner-programs,
 .partnership-matters,
 .partner-resource-section,
 .form-panel,
@@ -300,6 +301,8 @@ h3 {
 .notice p,
 .resource-grid p,
 .partner-copy p,
+.partner-brochure-callout p,
+.partner-program-grid p,
 .partnership-matters p,
 .partner-resource-card small,
 .form-panel p,
@@ -371,6 +374,8 @@ address a:focus-visible {
 .resource-grid article,
 .partner-spotlight,
 .partner-principles,
+.partner-brochure-callout,
+.partner-program-grid article,
 .partner-resource-card,
 .form-panel,
 .submission-guidelines,
@@ -996,6 +1001,47 @@ address a:focus-visible {
   color: var(--bark);
 }
 
+.partner-brochure-callout {
+  display: grid;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  padding: 1.2rem;
+  border-radius: 8px;
+  background: rgba(239, 227, 209, 0.42);
+}
+
+.partner-brochure-callout p {
+  margin: 0;
+}
+
+.partner-brochure-callout .button {
+  justify-self: start;
+}
+
+.partner-programs {
+  padding-top: 2rem;
+}
+
+.partner-program-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.partner-program-grid article {
+  padding: 1.35rem;
+  border-radius: 8px;
+}
+
+.partner-program-grid h3 {
+  font-size: 1.55rem;
+}
+
+.partner-program-grid p {
+  margin: 0.75rem 0 0;
+}
+
 .partnership-matters {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -1031,7 +1077,7 @@ address a:focus-visible {
 
 .partner-resource-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -1199,7 +1245,7 @@ address a,
   }
 
   .partner-resource-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .page-hero h1 {
@@ -1272,6 +1318,7 @@ address a,
   .timeline-item:nth-child(even),
   .blog-entry,
   .resource-grid,
+  .partner-program-grid,
   .partner-resource-grid,
   .support-links,
   .contact-panel {
@@ -1469,6 +1516,7 @@ address a,
   .resource-grid,
   .partnership-intro,
   .partner-spotlight,
+  .partner-programs,
   .partnership-matters,
   .partner-resource-section,
   .form-panel,
