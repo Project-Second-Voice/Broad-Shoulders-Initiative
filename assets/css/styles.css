@@ -724,6 +724,11 @@ address a:focus-visible {
   background: rgba(255, 250, 241, 0.72);
 }
 
+.blog-entry img.square-preview {
+  object-fit: contain;
+  background: rgba(255, 250, 241, 0.62);
+}
+
 .blog-content {
   display: grid;
   align-content: center;
@@ -777,6 +782,19 @@ address a:focus-visible {
 
 .story-detail-hero.product-feature img {
   max-height: min(720px, 78svh);
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.story-detail-hero.square-feature {
+  background: linear-gradient(135deg, rgba(255, 250, 241, 0.72), rgba(216, 192, 164, 0.22));
+}
+
+.story-detail-hero.square-feature img {
+  width: min(100%, 720px);
+  max-height: min(720px, 78svh);
+  margin-inline: auto;
   aspect-ratio: 1 / 1;
   object-fit: contain;
   object-position: center center;
