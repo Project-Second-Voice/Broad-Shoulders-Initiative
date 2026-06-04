@@ -127,7 +127,7 @@ button:focus-visible {
   font-weight: 650;
 }
 
-/* Navigation spacing is intentionally flexible so a future Partnerships link can be added cleanly. */
+/* Navigation spacing stays flexible as the initiative adds small policy and resource pages. */
 
 .nav-links a {
   position: relative;
@@ -226,6 +226,8 @@ button:focus-visible {
 .partner-programs,
 .partnership-matters,
 .partner-resource-section,
+.policy-section,
+.category-browser,
 .form-panel,
 .submission-guidelines,
 .contact-panel {
@@ -452,6 +454,11 @@ address a:focus-visible {
   border-bottom: 1px solid currentColor;
 }
 
+.text-link.inline-link {
+  display: inline;
+  margin-top: 0;
+}
+
 .split-section {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(260px, 0.65fr);
@@ -501,6 +508,8 @@ address a:focus-visible {
 .partner-spotlight,
 .partnership-matters,
 .partner-resource-section,
+.policy-section,
+.category-browser,
 .form-panel,
 .submission-guidelines,
 .contact-panel {
@@ -545,6 +554,10 @@ address a:focus-visible {
   font-family: var(--serif);
   font-size: 1.85rem;
   line-height: 1.05;
+}
+
+.post-row-tags {
+  grid-column: 2 / -1;
 }
 
 .post-row span,
@@ -746,6 +759,56 @@ address a:focus-visible {
   margin: 0 0 0.7rem;
 }
 
+.story-tags,
+.tag-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.story-tags {
+  margin: 0.15rem 0 1rem;
+}
+
+.story-tag,
+.tag-filter {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.34rem 0.68rem;
+  border: 1px solid rgba(89, 96, 68, 0.24);
+  border-radius: 999px;
+  background: rgba(239, 227, 209, 0.44);
+  color: var(--moss);
+  font-size: 0.78rem;
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+.tag-filter {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.tag-filter:hover,
+.tag-filter.active {
+  border-color: rgba(89, 96, 68, 0.48);
+  background: rgba(89, 96, 68, 0.12);
+}
+
+.category-browser {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.category-browser h2 {
+  font-size: 2.1rem;
+}
+
 .submission-note {
   max-width: 680px;
   margin-top: 0.7rem;
@@ -846,8 +909,8 @@ address a:focus-visible {
 
 .story-body {
   display: grid;
-  gap: 1.4rem;
-  max-width: 760px;
+  gap: 1.65rem;
+  max-width: 720px;
   margin-inline: auto;
 }
 
@@ -858,9 +921,25 @@ address a:focus-visible {
   font-size: 1.05rem;
 }
 
+.story-body p {
+  line-height: 1.82;
+}
+
 .story-body h2 {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   font-size: 2.2rem;
+}
+
+.pull-quote {
+  margin: 0.4rem 0;
+  padding: 1.1rem 1.25rem;
+  border-left: 3px solid rgba(89, 96, 68, 0.36);
+  background: rgba(255, 250, 241, 0.48);
+  color: var(--moss);
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.18;
 }
 
 .story-body ul {
@@ -931,6 +1010,34 @@ address a:focus-visible {
   line-height: 1.55;
 }
 
+.global-support-note {
+  max-width: 720px;
+  margin: 2.5rem auto 0;
+  padding: 1.2rem 1.35rem;
+  border: 1px solid rgba(89, 96, 68, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 250, 241, 0.58);
+}
+
+.global-support-note p {
+  margin: 0;
+  color: var(--bark);
+}
+
+.support-note-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  margin-top: 0.75rem;
+}
+
+.support-note-links a {
+  color: var(--moss);
+  font-weight: 750;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
 .back-link {
   display: inline-flex;
   margin-bottom: 1.5rem;
@@ -944,6 +1051,35 @@ address a:focus-visible {
   padding: 2rem;
   background: #efe1cb;
   border-color: rgba(89, 96, 68, 0.32);
+}
+
+.policy-section {
+  display: grid;
+  gap: 1rem;
+  max-width: 860px;
+}
+
+.policy-card {
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 250, 241, 0.64);
+}
+
+.policy-card h2 {
+  font-size: 2.15rem;
+}
+
+.policy-card p,
+.policy-card li {
+  color: var(--bark);
+}
+
+.policy-card ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
 }
 
 .resource-grid {
@@ -1355,6 +1491,7 @@ address a,
   .split-section,
   .partner-spotlight-grid,
   .partnership-matters,
+  .category-browser,
   .timeline-item,
   .timeline-item:nth-child(even),
   .blog-entry,
@@ -1430,6 +1567,10 @@ address a,
   .post-row {
     grid-template-columns: 1fr;
     gap: 0.35rem;
+  }
+
+  .post-row-tags {
+    grid-column: auto;
   }
 
   .site-footer {
@@ -1560,6 +1701,8 @@ address a,
   .partner-programs,
   .partnership-matters,
   .partner-resource-section,
+  .policy-section,
+  .category-browser,
   .form-panel,
   .submission-guidelines,
   .contact-panel {
@@ -1573,6 +1716,7 @@ address a,
   .partner-spotlight,
   .partner-principles,
   .partner-resource-card,
+  .policy-card,
   .story-support,
   .form-panel,
   .submission-guidelines,

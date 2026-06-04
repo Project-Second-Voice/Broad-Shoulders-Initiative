@@ -8,18 +8,24 @@ A clean static website for the youth-led Broad Shoulders Initiative, a not-for-p
 - `about.html`
 - `stories.html`
 - `resources.html`
+- `partnerships.html`
 - `submit.html`
+- `privacy.html`
 - `contact.html`
 
 ## Project Structure
 
 - `assets/css/styles.css`: shared responsive styling.
-- `assets/js/script.js`: mobile navigation behavior.
+- `assets/js/stories-data.js`: centralized story metadata used by the homepage and story archive.
+- `assets/js/script.js`: mobile navigation behavior, story rendering, filters, and support notes.
 - `assets/images/`: optimized logo and story visuals.
 - `stories/`: published standalone story pages.
 
 ## Current Story Pages
 
+- `stories/when-the-fun-slipped-away.html`
+- `stories/mistakes.html`
+- `stories/rejection.html`
 - `stories/communication.html`
 - `stories/enjoying-the-music.html`
 - `stories/problems.html`
@@ -31,10 +37,10 @@ A clean static website for the youth-led Broad Shoulders Initiative, a not-for-p
 ## Maintenance Notes
 
 - Keep shared visual rules in `assets/css/styles.css` so new pages inherit the same calm editorial style.
-- Add future top-level pages by copying an existing page shell, updating the active nav item, and adding one nav link in each page header.
-- The nav spacing is prepared for one additional future page link without needing a redesign.
+- Add future top-level pages by copying an existing page shell, updating the active nav item, and adding one nav link in each page header/footer.
 - Future partner logos, descriptions, and links can live under `assets/images/` and a new top-level page when that content is approved.
-- Keep all story pages linked from `stories.html`, and add any story-specific support links inside that story's `Resources & Support` section.
+- Add new story metadata to `assets/js/stories-data.js`; the homepage latest list and story archive render from that shared data.
+- Keep each story's individual page in `stories/`, and add any story-specific support links inside that story's `Resources & Support` section.
 - Do not publish submission content until it has been reviewed for consent, privacy, identifying details, and safety.
 
 ## Easy Preview

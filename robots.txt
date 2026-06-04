@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://broad-shoulders-initiative.github.io/sitemap.xml

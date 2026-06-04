@@ -16,6 +16,16 @@
     />
     <link rel="icon" href="assets/images/logo-mark.jpg" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Broad Shoulders Initiative" />
+    <meta property="og:title" content="Broad Shoulders Initiative" />
+    <meta property="og:description" content="A youth-led platform for mental health awareness, storytelling, and support." />
+    <meta property="og:image" content="https://broad-shoulders-initiative.github.io/assets/images/logo-hero.jpg" />
+    <meta property="og:url" content="https://broad-shoulders-initiative.github.io/index.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Broad Shoulders Initiative" />
+    <meta name="twitter:description" content="A youth-led platform for mental health awareness, storytelling, and support." />
+    <meta name="twitter:image" content="https://broad-shoulders-initiative.github.io/assets/images/logo-hero.jpg" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -35,6 +45,7 @@
           <a href="resources.html">Resources</a>
           <a href="partnerships.html">Partnerships</a>
           <a href="submit.html">Submit a Story</a>
+          <a href="privacy.html">Privacy</a>
           <a href="contact.html">Contact</a>
         </div>
       </nav>
@@ -121,18 +132,7 @@
             recovery, and identity.
           </p>
         </div>
-        <div class="post-list">
-          <a class="post-row" href="stories/enjoying-the-music.html">
-            <span>Growth &amp; Perseverance</span>
-            <strong>Enjoying the Music</strong>
-            <em>Jonathan Wang</em>
-          </a>
-          <a class="post-row" href="stories/problems.html">
-            <span>Body Image / Self-Esteem / Personal Growth</span>
-            <strong>Problems</strong>
-            <em>Jonathan Wang</em>
-          </a>
-        </div>
+        <div class="post-list" data-latest-stories></div>
       </section>
 
       <section class="cta-section">
@@ -148,9 +148,11 @@
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="resources.html">Resources</a>
         <a href="partnerships.html">Partnerships</a>
+        <a href="privacy.html">Privacy</a>
         <a href="mailto:broadshouldersinitiative@gmail.com">Email Broad Shoulders</a>
       </nav>
     </footer>
+    <script src="assets/js/stories-data.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
