@@ -1,3 +1,6 @@
+// To add a future story, append one object to BSI_STORIES with a single clear
+// `category` value. The Stories page, category filters, "All Stories" view, and
+// homepage latest stories all update from this metadata without extra page edits.
 window.BSI_STORIES = [
   {
     title: "When the Fun Slipped Away",
@@ -146,17 +149,4 @@ window.BSI_STORIES = [
     image: "assets/images/are-you-at-your-moms-kindergarten-graduation.jpg",
     imageAlt: "Jonathan Wang as a child wearing a graduation cap and Spider-Man shirt at kindergarten graduation",
   },
-];
-
-window.BSI_CATEGORIES = [
-  "Athlete Mental Health",
-  "Body Image",
-  "Growth & Reflection",
-  "Family & Relationships",
-  "Academic Pressure",
-  "Communication",
-  "Identity & Self-Worth",
-  "Injury Recovery",
-  "Anonymous Community Stories",
-  "Burnout & Anxiety",
 ];

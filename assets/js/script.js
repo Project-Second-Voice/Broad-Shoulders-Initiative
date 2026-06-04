@@ -2,7 +2,6 @@ const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
 const navToggleLabel = navToggle?.querySelector(".sr-only");
 const stories = window.BSI_STORIES || [];
-const categories = window.BSI_CATEGORIES || [];
 
 function setMenu(open) {
   if (!navToggle || !navLinks) return;
@@ -52,7 +51,7 @@ function makeTags(tags) {
 function makeArchiveCard(story) {
   const imageClass = story.imageClass ? ` ${story.imageClass}` : "";
   return `
-    <article class="blog-entry" id="${escapeHtml(story.slug)}" data-story-card data-tags="${escapeHtml(story.tags.join("|"))}">
+    <article class="blog-entry" id="${escapeHtml(story.slug)}" data-story-card data-category="${escapeHtml(story.category)}" data-tags="${escapeHtml((story.tags || []).join("|"))}">
       <img class="${escapeHtml(imageClass.trim())}" src="${escapeHtml(story.image)}" alt="${escapeHtml(story.imageAlt)}" width="1024" height="715" loading="lazy" decoding="async" />
       <div class="blog-content">
         <p class="eyebrow">${escapeHtml(story.category)}</p>
@@ -74,9 +73,7 @@ function renderStoryArchive() {
   archive.innerHTML = stories.map(makeArchiveCard).join("");
 
   if (!filters) return;
-  const categoriesWithStories = categories.filter((category) =>
-    stories.some((story) => story.tags.includes(category) || story.category === category)
-  );
+  const categoriesWithStories = [...new Set(stories.map((story) => story.category).filter(Boolean))];
   filters.innerHTML = [
     '<button class="tag-filter active" type="button" data-filter="all" aria-pressed="true">All Stories</button>',
     ...categoriesWithStories.map((category) => `<button class="tag-filter" type="button" data-filter="${escapeHtml(category)}" aria-pressed="false">${escapeHtml(category)}</button>`),
@@ -92,7 +89,7 @@ function renderStoryArchive() {
       item.setAttribute("aria-pressed", String(active));
     });
     archive.querySelectorAll("[data-story-card]").forEach((card) => {
-      const matches = filter === "all" || card.dataset.tags.split("|").includes(filter);
+      const matches = filter === "all" || card.dataset.category === filter;
       card.hidden = !matches;
       card.classList.toggle("is-hidden", !matches);
     });
