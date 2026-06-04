@@ -713,6 +713,11 @@ address a:focus-visible {
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
+.blog-entry[hidden],
+.blog-entry.is-hidden {
+  display: none;
+}
+
 .blog-entry:hover {
   transform: translateY(-3px);
   border-color: var(--line-strong);

@@ -74,9 +74,12 @@ function renderStoryArchive() {
   archive.innerHTML = stories.map(makeArchiveCard).join("");
 
   if (!filters) return;
+  const categoriesWithStories = categories.filter((category) =>
+    stories.some((story) => story.tags.includes(category) || story.category === category)
+  );
   filters.innerHTML = [
     '<button class="tag-filter active" type="button" data-filter="all" aria-pressed="true">All Stories</button>',
-    ...categories.map((category) => `<button class="tag-filter" type="button" data-filter="${escapeHtml(category)}" aria-pressed="false">${escapeHtml(category)}</button>`),
+    ...categoriesWithStories.map((category) => `<button class="tag-filter" type="button" data-filter="${escapeHtml(category)}" aria-pressed="false">${escapeHtml(category)}</button>`),
   ].join("");
 
   filters.addEventListener("click", (event) => {
@@ -91,6 +94,7 @@ function renderStoryArchive() {
     archive.querySelectorAll("[data-story-card]").forEach((card) => {
       const matches = filter === "all" || card.dataset.tags.split("|").includes(filter);
       card.hidden = !matches;
+      card.classList.toggle("is-hidden", !matches);
     });
   });
 }
