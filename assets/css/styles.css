@@ -729,6 +729,11 @@ address a:focus-visible {
   background: rgba(255, 250, 241, 0.62);
 }
 
+.blog-entry img.illustration-preview {
+  object-fit: contain;
+  background: rgba(239, 227, 209, 0.58);
+}
+
 .blog-content {
   display: grid;
   align-content: center;
@@ -739,6 +744,14 @@ address a:focus-visible {
   flex-wrap: wrap;
   gap: 0.35rem 0.8rem;
   margin: 0 0 0.7rem;
+}
+
+.submission-note {
+  max-width: 680px;
+  margin-top: 0.7rem;
+  color: var(--olive);
+  font-size: 0.98rem;
+  font-style: italic;
 }
 
 .read-more {
@@ -796,6 +809,16 @@ address a:focus-visible {
   max-height: min(720px, 78svh);
   margin-inline: auto;
   aspect-ratio: 1 / 1;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.story-detail-hero.illustration-feature {
+  background: linear-gradient(135deg, rgba(255, 250, 241, 0.76), rgba(216, 192, 164, 0.24));
+}
+
+.story-detail-hero.illustration-feature img {
+  max-height: min(620px, 78svh);
   object-fit: contain;
   object-position: center center;
 }
