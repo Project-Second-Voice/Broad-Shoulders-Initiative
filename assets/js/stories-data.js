@@ -3,6 +3,21 @@
 // homepage latest stories all update from this metadata without extra page edits.
 window.BSI_STORIES = [
   {
+    title: "Support Can Exist in Many Forms",
+    slug: "support-can-exist-in-many-forms",
+    url: "stories/support-can-exist-in-many-forms.html",
+    category: "Family & Relationships",
+    tags: ["Family & Relationships", "Growth & Reflection", "Athlete Mental Health", "Community Submissions"],
+    author: "Sadie G - Community Submission",
+    date: "June 5, 2026",
+    readTime: "3-4 min read",
+    excerpt:
+      "A student-athlete reflects on how support from family, teammates, coaches, and friends helped him navigate one of the hardest periods of his life during his father's military deployment.",
+    image: "assets/images/support-can-exist-in-many-forms-sadie-and-dad.jpg",
+    imageClass: "portrait-preview",
+    imageAlt: "Sadie hugging her dad in a home while wearing a lacrosse backpack",
+  },
+  {
     title: "When the Fun Slipped Away",
     slug: "when-the-fun-slipped-away",
     url: "stories/when-the-fun-slipped-away.html",

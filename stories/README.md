@@ -11,6 +11,8 @@ Use this folder for published Broad Shoulders Initiative story or blog pages.
 
 ## Published Stories
 
+- `support-can-exist-in-many-forms.html`: published story slug for "Support Can Exist in Many Forms."
+- `when-the-fun-slipped-away.html`: published story slug for "When the Fun Slipped Away."
 - `mistakes.html`: published story slug for "Mistakes."
 - `rejection.html`: published story slug for "Rejection."
 - `communication.html`: published story slug for "Communication."
