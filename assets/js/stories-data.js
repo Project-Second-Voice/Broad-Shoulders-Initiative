@@ -3,6 +3,24 @@
 // homepage latest stories all update from this metadata without extra page edits.
 window.BSI_STORIES = [
   {
+    title: "Pressure and Performance",
+    slug: "pressure-and-performance",
+    url: "stories/pressure-and-performance.html",
+    category: "Athlete Mental Health",
+    tags: ["Athlete Mental Health", "Performance Anxiety", "Identity & Self-Worth", "Growth & Reflection", "Anonymous Community Stories"],
+    author: "Anonymous Submission",
+    date: "June 6, 2026",
+    readTime: "4-5 min read",
+    excerpt:
+      "A goalie reflects on performance anxiety, self-doubt, and learning that an athlete's worth is not defined by mistakes, pressure, or perfection.",
+    image: "assets/images/pressure-and-performance-miind-my-miind.jpg",
+    imageClass: "illustration-preview",
+    imageAlt:
+      "Illustration of an athlete sitting on a basketball court with their head lowered and a basketball behind them",
+    imageWidth: 1068,
+    imageHeight: 583,
+  },
+  {
     title: "Support Can Exist in Many Forms",
     slug: "support-can-exist-in-many-forms",
     url: "stories/support-can-exist-in-many-forms.html",

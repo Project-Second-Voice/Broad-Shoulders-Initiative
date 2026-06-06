@@ -50,9 +50,11 @@ function makeTags(tags) {
 
 function makeArchiveCard(story) {
   const imageClass = story.imageClass ? ` ${story.imageClass}` : "";
+  const imageWidth = story.imageWidth || 1024;
+  const imageHeight = story.imageHeight || 715;
   return `
     <article class="blog-entry" id="${escapeHtml(story.slug)}" data-story-card data-category="${escapeHtml(story.category)}" data-tags="${escapeHtml((story.tags || []).join("|"))}">
-      <img class="${escapeHtml(imageClass.trim())}" src="${escapeHtml(story.image)}" alt="${escapeHtml(story.imageAlt)}" width="1024" height="715" loading="lazy" decoding="async" />
+      <img class="${escapeHtml(imageClass.trim())}" src="${escapeHtml(story.image)}" alt="${escapeHtml(story.imageAlt)}" width="${imageWidth}" height="${imageHeight}" loading="lazy" decoding="async" />
       <div class="blog-content">
         <p class="eyebrow">${escapeHtml(story.category)}</p>
         <h2>${escapeHtml(story.title)}</h2>
