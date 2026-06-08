@@ -1,7 +1,25 @@
 // To add a future story, append one object to BSI_STORIES with a single clear
-// `category` value. The Stories page, category filters, "All Stories" view, and
-// homepage latest stories all update from this metadata without extra page edits.
+// `category` value and relevant `tags`. The Stories page filters, "All Stories"
+// view, and homepage latest stories update without extra page edits.
 window.BSI_STORIES = [
+  {
+    title: "Myself",
+    slug: "myself",
+    url: "stories/myself.html",
+    category: "Connection & Loneliness",
+    tags: ["Connection & Loneliness", "Growth & Reflection", "Friendship", "Identity", "Mental Health"],
+    author: "Jonathan Wang",
+    date: "June 8, 2026",
+    readTime: "6-7 min read",
+    excerpt:
+      "A reflection on loneliness, independence, and realizing that the small conversations and friendships we often overlook are what give life warmth and meaning.",
+    image: "assets/images/myself-how-loneliness-affects-health.jpg",
+    imageClass: "illustration-preview",
+    imageAlt:
+      "A solitary person standing in a pale open space while casting a long shadow",
+    imageWidth: 616,
+    imageHeight: 400,
+  },
   {
     title: "Pressure and Performance",
     slug: "pressure-and-performance",

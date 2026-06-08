@@ -75,10 +75,10 @@ function renderStoryArchive() {
   archive.innerHTML = stories.map(makeArchiveCard).join("");
 
   if (!filters) return;
-  const categoriesWithStories = [...new Set(stories.map((story) => story.category).filter(Boolean))];
+  const tagsWithStories = [...new Set(stories.flatMap((story) => story.tags || []).filter(Boolean))];
   filters.innerHTML = [
     '<button class="tag-filter active" type="button" data-filter="all" aria-pressed="true">All Stories</button>',
-    ...categoriesWithStories.map((category) => `<button class="tag-filter" type="button" data-filter="${escapeHtml(category)}" aria-pressed="false">${escapeHtml(category)}</button>`),
+    ...tagsWithStories.map((tag) => `<button class="tag-filter" type="button" data-filter="${escapeHtml(tag)}" aria-pressed="false">${escapeHtml(tag)}</button>`),
   ].join("");
 
   filters.addEventListener("click", (event) => {
@@ -91,7 +91,8 @@ function renderStoryArchive() {
       item.setAttribute("aria-pressed", String(active));
     });
     archive.querySelectorAll("[data-story-card]").forEach((card) => {
-      const matches = filter === "all" || card.dataset.category === filter;
+      const tags = (card.dataset.tags || "").split("|");
+      const matches = filter === "all" || tags.includes(filter);
       card.hidden = !matches;
       card.classList.toggle("is-hidden", !matches);
     });
