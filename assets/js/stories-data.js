@@ -3,6 +3,24 @@
 // view, and homepage latest stories update without extra page edits.
 window.BSI_STORIES = [
   {
+    title: "Comparison",
+    slug: "comparison",
+    url: "stories/comparison.html",
+    category: "Identity & Self-Worth",
+    tags: ["Identity & Self-Worth", "Growth & Reflection", "Social Media", "Athletics", "Self-Confidence", "Mental Health"],
+    author: "Jonathan Wang",
+    date: "June 11, 2026",
+    readTime: "7-8 min read",
+    excerpt:
+      "A reflection on comparison, social pressure, and learning that every person's journey, struggles, and timeline are uniquely their own.",
+    image: "assets/images/comparison-is-the-thief-of-joy.jpg",
+    imageClass: "illustration-preview",
+    imageAlt:
+      "Illustration of a fish wishing it could fly and a bird wishing it could swim beneath the words Comparison Is The Thief Of Joy",
+    imageWidth: 1007,
+    imageHeight: 741,
+  },
+  {
     title: "Myself",
     slug: "myself",
     url: "stories/myself.html",
