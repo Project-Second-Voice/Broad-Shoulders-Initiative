@@ -3,6 +3,24 @@
 // view, and homepage latest stories update without extra page edits.
 window.BSI_STORIES = [
   {
+    title: "Average",
+    slug: "average",
+    url: "stories/average.html",
+    category: "Identity & Self-Worth",
+    tags: ["Identity & Self-Worth", "Growth & Reflection", "Perfectionism", "Athletics", "Academic Pressure", "Mental Health"],
+    author: "Jonathan Wang",
+    date: "June 13, 2026",
+    readTime: "6-7 min read",
+    excerpt:
+      "A reflection on ambition, perfectionism, and learning that being average is not something to be ashamed of.",
+    image: "assets/images/average-bell-curve.png",
+    imageClass: "illustration-preview",
+    imageAlt:
+      "Bell curve with a dashed vertical line at its center labeled mean, median, and mode",
+    imageWidth: 1053,
+    imageHeight: 528,
+  },
+  {
     title: "Comparison",
     slug: "comparison",
     url: "stories/comparison.html",
