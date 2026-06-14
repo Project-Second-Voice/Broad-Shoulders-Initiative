@@ -6,12 +6,16 @@ Use this folder for published Broad Shoulders Initiative story or blog pages.
 
 1. Create a new HTML file with a short lowercase slug, such as `my-story-title.html`.
 2. Use the structure of an existing published story page for navigation, metadata, story body, image, and support links.
-3. Link the new page from a matching card in `../stories.html`.
+3. Add the story metadata to `../assets/js/stories-data.js` so the archive, filters, and homepage update together.
 4. Review the story for privacy, consent, identifying details, and safety before publishing.
 
 ## Published Stories
 
 - `support-can-exist-in-many-forms.html`: published story slug for "Support Can Exist in Many Forms."
+- `pressure-and-performance.html`: published story slug for "Pressure and Performance."
+- `average.html`: published story slug for "Average."
+- `comparison.html`: published story slug for "Comparison."
+- `myself.html`: published story slug for "Myself."
 - `when-the-fun-slipped-away.html`: published story slug for "When the Fun Slipped Away."
 - `mistakes.html`: published story slug for "Mistakes."
 - `rejection.html`: published story slug for "Rejection."

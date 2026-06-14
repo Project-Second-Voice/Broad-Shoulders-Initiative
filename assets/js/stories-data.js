@@ -8,7 +8,7 @@ window.BSI_STORIES = [
     url: "stories/average.html",
     category: "Identity & Self-Worth",
     tags: ["Identity & Self-Worth", "Growth & Reflection", "Perfectionism", "Athletics", "Academic Pressure", "Mental Health"],
-    author: "Jonathan Wang",
+    author: "Founder Reflection by Jonathan Wang",
     date: "June 13, 2026",
     readTime: "6-7 min read",
     excerpt:
@@ -26,7 +26,7 @@ window.BSI_STORIES = [
     url: "stories/comparison.html",
     category: "Identity & Self-Worth",
     tags: ["Identity & Self-Worth", "Growth & Reflection", "Social Media", "Athletics", "Self-Confidence", "Mental Health"],
-    author: "Jonathan Wang",
+    author: "Founder Reflection by Jonathan Wang",
     date: "June 11, 2026",
     readTime: "7-8 min read",
     excerpt:
@@ -44,7 +44,7 @@ window.BSI_STORIES = [
     url: "stories/myself.html",
     category: "Connection & Loneliness",
     tags: ["Connection & Loneliness", "Growth & Reflection", "Friendship", "Identity", "Mental Health"],
-    author: "Jonathan Wang",
+    author: "Founder Reflection by Jonathan Wang",
     date: "June 8, 2026",
     readTime: "6-7 min read",
     excerpt:
@@ -80,11 +80,11 @@ window.BSI_STORIES = [
     url: "stories/support-can-exist-in-many-forms.html",
     category: "Family & Relationships",
     tags: ["Family & Relationships", "Growth & Reflection", "Athlete Mental Health", "Community Submissions"],
-    author: "Sadie G - Community Submission",
+    author: "Community Submission by Sadie G",
     date: "June 5, 2026",
     readTime: "3-4 min read",
     excerpt:
-      "A student-athlete reflects on how support from family, teammates, coaches, and friends helped him navigate one of the hardest periods of his life during his father's military deployment.",
+      "A student-athlete reflects on how support from family, teammates, coaches, and friends helped her navigate one of the hardest periods of her life during her father's military deployment.",
     image: "assets/images/support-can-exist-in-many-forms-sadie-and-dad.jpg",
     imageClass: "portrait-preview",
     imageAlt: "Sadie hugging her dad in a home while wearing a lacrosse backpack",
@@ -111,7 +111,7 @@ window.BSI_STORIES = [
     url: "stories/mistakes.html",
     category: "Growth & Reflection",
     tags: ["Growth & Reflection", "Identity & Self-Worth"],
-    author: "Jonathan Wang",
+    author: "Founder Reflection by Jonathan Wang",
     date: "June 3, 2026",
     readTime: "5-6 min read",
     excerpt:
@@ -126,7 +126,7 @@ window.BSI_STORIES = [
     url: "stories/rejection.html",
     category: "Growth & Reflection",
     tags: ["Growth & Reflection", "Academic Pressure", "Identity & Self-Worth"],
-    author: "Jonathan Wang",
+    author: "Founder Reflection by Jonathan Wang",
     date: "June 2, 2026",
     readTime: "5-6 min read",
     excerpt:
@@ -141,7 +141,7 @@ window.BSI_STORIES = [
     url: "stories/communication.html",
     category: "Communication",
     tags: ["Communication", "Family & Relationships", "Growth & Reflection"],
-    author: "Jonathan Wang",
+    author: "Founder Reflection by Jonathan Wang",
     date: "May 30, 2026",
     readTime: "5-6 min read",
     excerpt:
@@ -155,7 +155,7 @@ window.BSI_STORIES = [
     url: "stories/enjoying-the-music.html",
     category: "Growth & Reflection",
     tags: ["Growth & Reflection", "Academic Pressure", "Identity & Self-Worth"],
-    author: "Jonathan Wang",
+    author: "Founder Reflection by Jonathan Wang",
     date: "May 29, 2026",
     readTime: "6-7 min read",
     excerpt:
@@ -170,7 +170,7 @@ window.BSI_STORIES = [
     url: "stories/problems.html",
     category: "Body Image",
     tags: ["Body Image", "Identity & Self-Worth", "Growth & Reflection"],
-    author: "Jonathan Wang",
+    author: "Founder Reflection by Jonathan Wang",
     date: "May 25, 2026",
     readTime: "5 min read",
     excerpt:
@@ -185,7 +185,7 @@ window.BSI_STORIES = [
     url: "stories/doubt-and-performance-anxiety.html",
     category: "Athlete Mental Health",
     tags: ["Athlete Mental Health", "Burnout & Anxiety", "Injury Recovery"],
-    author: "Jonathan Wang",
+    author: "Founder Reflection by Jonathan Wang",
     date: "May 20, 2026",
     readTime: "5 min read",
     excerpt:
@@ -199,7 +199,7 @@ window.BSI_STORIES = [
     url: "stories/broad-shoulders.html",
     category: "Body Image",
     tags: ["Body Image", "Identity & Self-Worth"],
-    author: "Jonathan Wang",
+    author: "Founder Reflection by Jonathan Wang",
     date: "May 19, 2026",
     readTime: "5 min read",
     excerpt:
@@ -214,7 +214,7 @@ window.BSI_STORIES = [
     url: "stories/you-come-before-the-athlete.html",
     category: "Athlete Mental Health",
     tags: ["Athlete Mental Health", "Injury Recovery", "Identity & Self-Worth"],
-    author: "Jonathan Wang",
+    author: "Founder Reflection by Jonathan Wang",
     date: "May 15, 2026",
     readTime: "5 min read",
     excerpt:
@@ -228,7 +228,7 @@ window.BSI_STORIES = [
     url: "stories/are-you-at-your-moms.html",
     category: "Family & Relationships",
     tags: ["Family & Relationships", "Growth & Reflection"],
-    author: "Jonathan Wang",
+    author: "Founder Reflection by Jonathan Wang",
     date: "May 14, 2026",
     readTime: "5 min read",
     excerpt:

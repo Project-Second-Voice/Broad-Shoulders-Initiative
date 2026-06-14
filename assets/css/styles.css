@@ -4,7 +4,7 @@
   --sand: #d8c0a4;
   --tan: #b99978;
   --moss: #596044;
-  --olive: #747557;
+  --olive: #68694d;
   --bark: #5d4734;
   --ink: #2c2b22;
   --soft-white: #fffaf1;
@@ -47,6 +47,11 @@ img {
 
 a {
   color: inherit;
+}
+
+a[target="_blank"]:not(.button)::after {
+  content: " ↗";
+  font-size: 0.85em;
 }
 
 h1,
@@ -231,6 +236,14 @@ button:focus-visible {
 .form-panel,
 .submission-guidelines,
 .contact-panel {
+  width: var(--content-width);
+  margin-inline: auto;
+}
+
+.initiative-intro,
+.campaign-framework,
+.future-campaigns,
+.initiative-possibilities {
   width: var(--content-width);
   margin-inline: auto;
 }
@@ -947,6 +960,16 @@ address a:focus-visible {
   line-height: 1.5;
 }
 
+.content-note {
+  margin: 0 0 0.35rem;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid rgba(89, 96, 68, 0.48);
+  background: rgba(239, 227, 209, 0.56);
+  color: var(--bark);
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
 .pull-quote {
   margin: 0.4rem 0;
   padding: 1.1rem 1.25rem;
@@ -1092,6 +1115,16 @@ address a:focus-visible {
   color: var(--bark);
 }
 
+.policy-card a {
+  color: var(--moss);
+  font-weight: 750;
+}
+
+.policy-crisis {
+  border-color: rgba(89, 96, 68, 0.38);
+  background: #efe1cb;
+}
+
 .policy-card ul {
   display: grid;
   gap: 0.55rem;
@@ -1114,9 +1147,28 @@ address a:focus-visible {
 }
 
 .resource-list {
+  display: grid;
+  gap: 0.8rem;
   margin: 1rem 0 0;
   padding-left: 1.1rem;
   color: var(--bark);
+}
+
+.resource-list li {
+  padding-left: 0.15rem;
+}
+
+.resource-list small {
+  display: block;
+  margin-top: 0.12rem;
+  color: var(--bark);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.resource-priority {
+  border-color: rgba(89, 96, 68, 0.42) !important;
+  background: #efe1cb !important;
 }
 
 .resource-list a,
@@ -1314,6 +1366,14 @@ address a:focus-visible {
   margin: 0 auto;
 }
 
+.form-status-note,
+.response-note {
+  padding: 0.85rem 1rem;
+  border-left: 3px solid rgba(89, 96, 68, 0.4);
+  background: rgba(239, 227, 209, 0.48);
+  text-align: left;
+}
+
 .submission-guidelines {
   padding-top: 2rem;
 }
@@ -1347,6 +1407,85 @@ address a,
   color: var(--moss);
   font-weight: 750;
   overflow-wrap: anywhere;
+}
+
+.contact-topic-list {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--bark);
+}
+
+.initiative-intro,
+.future-campaigns {
+  padding: 5rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.campaign-framework,
+.initiative-possibilities {
+  padding: 5rem 0;
+}
+
+.campaign-step-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.campaign-step-grid article {
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 250, 241, 0.64);
+}
+
+.campaign-step-grid span {
+  color: var(--moss);
+  font-weight: 750;
+}
+
+.campaign-step-grid h3 {
+  margin-top: 1.2rem;
+  font-size: 1.55rem;
+}
+
+.campaign-step-grid p {
+  margin: 0.7rem 0 0;
+  color: var(--bark);
+}
+
+.future-campaigns {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.future-campaigns h2 {
+  font-size: 3.2rem;
+}
+
+.future-campaigns p {
+  color: var(--bark);
+}
+
+.theme-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.theme-list span {
+  padding: 0.65rem 0.85rem;
+  border: 1px solid rgba(89, 96, 68, 0.28);
+  border-radius: 999px;
+  background: rgba(239, 227, 209, 0.5);
+  color: var(--moss);
+  font-weight: 750;
 }
 
 .site-footer {
@@ -1516,7 +1655,9 @@ address a,
   .partner-program-grid,
   .partner-resource-grid,
   .support-links,
-  .contact-panel {
+  .contact-panel,
+  .campaign-step-grid,
+  .future-campaigns {
     grid-template-columns: 1fr;
   }
 
@@ -1722,7 +1863,11 @@ address a,
   .category-browser,
   .form-panel,
   .submission-guidelines,
-  .contact-panel {
+  .contact-panel,
+  .initiative-intro,
+  .campaign-framework,
+  .future-campaigns,
+  .initiative-possibilities {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }

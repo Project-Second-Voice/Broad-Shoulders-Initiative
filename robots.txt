@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://broad-shoulders-initiative.github.io/sitemap.xml
+Sitemap: https://project-second-voice.github.io/Broad-Shoulders-Initiative/sitemap.xml

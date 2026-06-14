@@ -134,10 +134,10 @@ function renderStorySupportNote() {
     "beforeend",
     `
       <aside class="global-support-note" aria-label="Support reminder">
-        <p>If you are struggling, you are not alone. Support resources are available, and reaching out can be a strong first step.</p>
+        <p>If you are struggling, you are not alone. Broad Shoulders is not a crisis service. In the United States, call or text 988 for immediate crisis support.</p>
         <div class="support-note-links">
           <a href="../resources.html">Visit Resources</a>
-          <a href="https://988lifeline.org/get-help/" target="_blank" rel="noopener">988 Lifeline</a>
+          <a href="https://988lifeline.org/get-help/" target="_blank" rel="noopener">988 Lifeline <span class="sr-only">(external link)</span></a>
         </div>
       </aside>
     `

@@ -8,6 +8,7 @@ A clean static website for the youth-led Broad Shoulders Initiative, a not-for-p
 - `about.html`
 - `stories.html`
 - `resources.html`
+- `initiatives.html`
 - `partnerships.html`
 - `submit.html`
 - `privacy.html`
