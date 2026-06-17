@@ -24,6 +24,7 @@ A clean static website for the youth-led Broad Shoulders Initiative, a not-for-p
 
 ## Current Story Pages
 
+- `stories/reaching-out.html`
 - `stories/when-the-fun-slipped-away.html`
 - `stories/mistakes.html`
 - `stories/rejection.html`

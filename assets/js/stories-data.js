@@ -3,6 +3,24 @@
 // view, and homepage latest stories update without extra page edits.
 window.BSI_STORIES = [
   {
+    title: "Reaching Out",
+    slug: "reaching-out",
+    url: "stories/reaching-out.html",
+    category: "Body Image",
+    tags: ["Body Image", "Mental Health", "Family & Relationships", "Academic Pressure", "Anxiety", "Self-Worth", "Anonymous Community Stories"],
+    author: "Anonymous Submission",
+    date: "June 17, 2026",
+    readTime: "3-4 min read",
+    excerpt:
+      "An anonymous reflection on body image, family stress, academic pressure, and the importance of reaching out when life feels overwhelming.",
+    image: "assets/images/reaching-out-craig-ruvere.png",
+    imageClass: "illustration-preview",
+    imageAlt:
+      "Overhead view of two large crowd-formed hands reaching toward each other across a white space",
+    imageWidth: 500,
+    imageHeight: 364,
+  },
+  {
     title: "Average",
     slug: "average",
     url: "stories/average.html",
