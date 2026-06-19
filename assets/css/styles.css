@@ -1,6 +1,9 @@
 :root {
   --cream: #f7f0e4;
   --parchment: #efe3d1;
+  --warm-cream: #fff6e8;
+  --oat: #ead7bd;
+  --clay: #c99f7a;
   --sand: #d8c0a4;
   --tan: #b99978;
   --moss: #596044;
@@ -31,7 +34,9 @@ body {
   margin: 0;
   overflow-x: hidden;
   background:
+    linear-gradient(180deg, rgba(255, 246, 232, 0.72), rgba(247, 240, 228, 0) 34rem),
     radial-gradient(circle at top left, rgba(216, 192, 164, 0.22), transparent 32rem),
+    radial-gradient(circle at 92% 18%, rgba(201, 159, 122, 0.14), transparent 28rem),
     var(--cream);
   color: var(--ink);
   font-family: var(--sans);
@@ -218,6 +223,7 @@ button:focus-visible {
 .hero,
 .statement-section,
 .feature-band,
+.founder-snapshot,
 .home-spotlight,
 .split-section,
 .story-timeline-section,
@@ -256,7 +262,7 @@ button:focus-visible {
   align-items: center;
   gap: 4rem;
   min-height: calc(100svh - 72px);
-  padding: 4.5rem 0 5rem;
+  padding: 4.5rem 0 4rem;
 }
 
 h1,
@@ -271,7 +277,7 @@ h3 {
 
 .hero h1 {
   max-width: 720px;
-  font-size: 6.9rem;
+  font-size: clamp(4.8rem, 9vw, 6.9rem);
 }
 
 .page-hero h1 {
@@ -280,6 +286,7 @@ h3 {
 }
 
 .statement-grid h2,
+.founder-snapshot h2,
 .split-copy h2,
 .section-heading h2,
 .cta-section h2 {
@@ -312,6 +319,7 @@ h3 {
 
 .hero-subtitle,
 .statement-grid p,
+.founder-snapshot p,
 .split-copy p,
 .page-hero p,
 .cta-section p,
@@ -386,6 +394,7 @@ address a:focus-visible {
 }
 
 .hero-logo-wrap,
+.founder-snapshot-photo,
 .image-note,
 .blog-entry,
 .home-spotlight,
@@ -407,7 +416,10 @@ address a:focus-visible {
 .hero-logo-wrap {
   border-radius: 4px;
   box-shadow: var(--shadow);
-  padding: 1.25rem;
+  padding: clamp(0.9rem, 2vw, 1.25rem);
+  background:
+    linear-gradient(135deg, rgba(255, 246, 232, 0.82), rgba(234, 215, 189, 0.48)),
+    rgba(255, 250, 241, 0.72);
 }
 
 .hero-logo {
@@ -415,7 +427,7 @@ address a:focus-visible {
 }
 
 .statement-section {
-  padding: 5rem 0;
+  padding: 4.25rem 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -437,14 +449,16 @@ address a:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  padding: 5rem 0;
+  padding: 4.5rem 0;
 }
 
 .feature-panel {
-  min-height: 300px;
+  min-height: 260px;
   padding: 2rem;
   border: 1px solid var(--line);
-  background: rgba(255, 250, 241, 0.55);
+  background:
+    linear-gradient(180deg, rgba(255, 250, 241, 0.76), rgba(239, 227, 209, 0.36)),
+    rgba(255, 250, 241, 0.55);
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
@@ -456,10 +470,48 @@ address a:focus-visible {
 
 .feature-number {
   display: inline-block;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.8rem;
   color: var(--olive);
   font-family: var(--serif);
   font-size: 1.35rem;
+}
+
+.founder-snapshot {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(240px, 0.5fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: center;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 246, 232, 0.72), rgba(234, 215, 189, 0.58)),
+    var(--parchment);
+  box-shadow: var(--shadow-soft);
+}
+
+.founder-snapshot h2 {
+  max-width: 780px;
+}
+
+.founder-snapshot-copy p:not(.eyebrow) {
+  max-width: 690px;
+}
+
+.founder-snapshot-photo {
+  margin: 0;
+  padding: 0.85rem;
+  border-radius: 8px;
+  background: rgba(255, 250, 241, 0.66);
+  box-shadow: var(--shadow-soft);
+}
+
+.founder-snapshot-photo img {
+  width: 100%;
+  max-height: 420px;
+  border-radius: 6px;
+  object-fit: cover;
+  object-position: center 18%;
 }
 
 .text-link {
@@ -481,23 +533,35 @@ address a:focus-visible {
   grid-template-columns: minmax(0, 0.95fr) minmax(260px, 0.65fr);
   gap: 4rem;
   align-items: center;
-  padding: 5rem 0;
+  padding: 4.5rem 0;
 }
 
 .home-spotlight,
 .resource-spotlight {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(180px, 260px);
+  grid-template-columns: minmax(0, 1fr) minmax(190px, 260px);
   gap: clamp(1.25rem, 4vw, 3rem);
   align-items: center;
-  padding: 2rem;
+  min-width: 0;
+  padding: clamp(1.5rem, 4vw, 3rem);
   border-radius: 8px;
-  background: rgba(255, 250, 241, 0.66);
+  overflow: visible;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 241, 0.86), rgba(234, 215, 189, 0.42)),
+    rgba(255, 250, 241, 0.66);
   box-shadow: var(--shadow-soft);
 }
 
 .home-spotlight {
+  margin-top: 4rem;
   margin-bottom: 1rem;
+}
+
+.home-spotlight-copy,
+.resource-spotlight > div {
+  min-width: 0;
+  padding-left: clamp(0rem, 1.2vw, 0.75rem);
+  overflow: visible;
 }
 
 .home-spotlight h2,
@@ -507,7 +571,7 @@ address a:focus-visible {
 
 .home-spotlight p,
 .resource-spotlight p {
-  max-width: 720px;
+  max-width: 700px;
   color: var(--bark);
 }
 
@@ -525,7 +589,7 @@ address a:focus-visible {
   padding: 1rem;
   border: 1px solid rgba(89, 96, 68, 0.18);
   border-radius: 8px;
-  background: rgba(239, 227, 209, 0.38);
+  background: rgba(239, 227, 209, 0.46);
 }
 
 .home-spotlight-logo img,
@@ -538,7 +602,7 @@ address a:focus-visible {
   justify-self: center;
   padding: 1rem;
   border: 1px solid rgba(89, 96, 68, 0.18);
-  background: rgba(239, 227, 209, 0.38);
+  background: rgba(239, 227, 209, 0.46);
 }
 
 .founder-section {
@@ -573,6 +637,7 @@ address a:focus-visible {
 }
 
 .latest-section,
+.founder-snapshot,
 .story-timeline-section,
 .page-hero,
 .blog-index,
@@ -589,6 +654,38 @@ address a:focus-visible {
 .submission-guidelines,
 .contact-panel {
   padding: 4.5rem 0;
+}
+
+.home-spotlight,
+.resource-spotlight {
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.story-home-section {
+  padding-top: 4rem;
+  padding-bottom: 2.75rem;
+}
+
+.story-theme-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.4rem 0 0.35rem;
+}
+
+.story-theme-strip span {
+  padding: 0.55rem 0.8rem;
+  border: 1px solid rgba(89, 96, 68, 0.24);
+  border-radius: 999px;
+  background: rgba(234, 215, 189, 0.5);
+  color: var(--moss);
+  font-size: 0.84rem;
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+.story-archive-button {
+  margin-top: 1.5rem;
 }
 
 .page-hero {
@@ -617,12 +714,13 @@ address a:focus-visible {
   padding: 1.4rem 0;
   border-bottom: 1px solid var(--line);
   text-decoration: none;
-  transition: color 180ms ease, padding-left 180ms ease;
+  transition: color 180ms ease, padding-left 180ms ease, background 180ms ease;
 }
 
 .post-row:hover {
   color: var(--moss);
   padding-left: 0.4rem;
+  background: rgba(255, 250, 241, 0.38);
 }
 
 .post-row strong {
@@ -646,8 +744,11 @@ address a:focus-visible {
 
 .cta-section {
   margin-bottom: 5rem;
-  padding: 4rem 2rem;
-  background: var(--moss);
+  padding: clamp(3rem, 6vw, 4.5rem) clamp(1.5rem, 5vw, 3rem);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(89, 96, 68, 0.98), rgba(93, 71, 52, 0.9)),
+    var(--moss);
   color: var(--soft-white);
 }
 
@@ -1389,7 +1490,7 @@ address a:focus-visible {
 
 .partner-resource-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -1710,6 +1811,7 @@ address a,
   .hero,
   .statement-grid,
   .feature-band,
+  .founder-snapshot,
   .home-spotlight,
   .split-section,
   .partner-spotlight-grid,
@@ -1771,6 +1873,7 @@ address a,
   }
 
   .statement-grid h2,
+  .founder-snapshot h2,
   .split-copy h2,
   .section-heading h2,
   .cta-section h2,
@@ -1862,6 +1965,7 @@ address a,
 
   .hero-subtitle,
   .statement-grid p,
+  .founder-snapshot p,
   .split-copy p,
   .page-hero p,
   .cta-section p,
@@ -1918,6 +2022,7 @@ address a,
 
   .statement-section,
   .feature-band,
+  .founder-snapshot,
   .split-section,
   .story-timeline-section,
   .latest-section,
