@@ -3,6 +3,24 @@
 // view, and homepage latest stories update without extra page edits.
 window.BSI_STORIES = [
   {
+    title: "Burnout",
+    slug: "burnout",
+    url: "stories/burnout.html",
+    category: "Growth & Reflection",
+    tags: ["Growth & Reflection", "Burnout", "Academic Pressure", "Ambition", "Self-Worth", "Mental Health", "Personal Growth"],
+    author: "Founder Reflection by Jonathan Wang",
+    date: "June 19, 2026",
+    readTime: "5-6 min read",
+    excerpt:
+      "A reflection on ambition, discipline, and the reality that every opportunity comes with unseen costs that only reveal themselves after the excitement fades.",
+    image: "assets/images/burnout-range.png",
+    imageClass: "illustration-preview",
+    imageAlt:
+      "Illustration of an exhausted student slumped over a desk beneath a low battery symbol",
+    imageWidth: 1200,
+    imageHeight: 630,
+  },
+  {
     title: "Reaching Out",
     slug: "reaching-out",
     url: "stories/reaching-out.html",
