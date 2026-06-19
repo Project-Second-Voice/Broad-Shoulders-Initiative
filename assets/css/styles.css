@@ -19,6 +19,9 @@
   --sans: "Inter", Arial, sans-serif;
   --content-width: min(1120px, calc(100% - 32px));
   --nav-width: min(1180px, calc(100% - 32px));
+  --card-padding: clamp(1.5rem, 3vw, 2.5rem);
+  --card-padding-roomy: clamp(2rem, 5vw, 3.5rem);
+  --card-padding-compact: clamp(1.15rem, 2vw, 1.5rem);
 }
 
 * {
@@ -248,6 +251,28 @@ button:focus-visible {
   margin-inline: auto;
 }
 
+.hero > *,
+.statement-grid > *,
+.feature-band > *,
+.founder-snapshot > *,
+.home-spotlight > *,
+.split-section > *,
+.post-row > *,
+.blog-entry > *,
+.resource-spotlight > *,
+.resource-grid > *,
+.partner-spotlight > *,
+.partner-spotlight-grid > *,
+.partnership-matters > *,
+.partner-program-grid > *,
+.partner-resource-grid > *,
+.policy-section > *,
+.contact-panel > *,
+.campaign-step-grid > *,
+.future-campaigns > * {
+  min-width: 0;
+}
+
 .initiative-intro,
 .campaign-framework,
 .future-campaigns,
@@ -454,7 +479,7 @@ address a:focus-visible {
 
 .feature-panel {
   min-height: 260px;
-  padding: 2rem;
+  padding: var(--card-padding);
   border: 1px solid var(--line);
   background:
     linear-gradient(180deg, rgba(255, 250, 241, 0.76), rgba(239, 227, 209, 0.36)),
@@ -481,7 +506,7 @@ address a:focus-visible {
   grid-template-columns: minmax(0, 0.95fr) minmax(240px, 0.5fr);
   gap: clamp(1.5rem, 5vw, 4rem);
   align-items: center;
-  padding: clamp(2rem, 5vw, 3.5rem);
+  padding: var(--card-padding-roomy);
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
@@ -610,7 +635,7 @@ address a:focus-visible {
 }
 
 .image-note {
-  padding: 1rem;
+  padding: var(--card-padding-compact);
   box-shadow: var(--shadow);
 }
 
@@ -637,7 +662,6 @@ address a:focus-visible {
 }
 
 .latest-section,
-.founder-snapshot,
 .story-timeline-section,
 .page-hero,
 .blog-index,
@@ -885,7 +909,7 @@ address a:focus-visible {
   grid-template-columns: 180px minmax(0, 1fr);
   gap: 1.5rem;
   align-items: stretch;
-  padding: 1rem;
+  padding: var(--card-padding-compact);
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
@@ -1263,6 +1287,7 @@ address a:focus-visible {
 }
 
 .policy-card {
+  min-width: 0;
   padding: 2rem;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -1271,6 +1296,7 @@ address a:focus-visible {
 
 .policy-card h2 {
   font-size: 2.15rem;
+  overflow-wrap: anywhere;
 }
 
 .policy-card p,
@@ -1490,7 +1516,7 @@ address a:focus-visible {
 
 .partner-resource-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -1500,7 +1526,7 @@ address a:focus-visible {
   align-content: start;
   gap: 0.65rem;
   min-height: 100%;
-  padding: 1.25rem;
+  padding: var(--card-padding-compact);
   border-radius: 8px;
   text-decoration: none;
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
@@ -1517,11 +1543,13 @@ address a:focus-visible {
   color: var(--moss);
   font-weight: 750;
   line-height: 1.25;
+  overflow-wrap: anywhere;
 }
 
 .partner-resource-card small {
   font-size: 0.92rem;
   line-height: 1.55;
+  overflow-wrap: anywhere;
 }
 
 .form-panel {
@@ -1914,8 +1942,11 @@ address a,
 
 @media (max-width: 560px) {
   :root {
-    --content-width: min(100% - 24px, 1120px);
-    --nav-width: min(100% - 24px, 1120px);
+    --content-width: min(100% - 32px, 1120px);
+    --nav-width: min(100% - 32px, 1120px);
+    --card-padding: clamp(1.4rem, 6vw, 2rem);
+    --card-padding-roomy: clamp(1.5rem, 6vw, 2rem);
+    --card-padding-compact: clamp(1.25rem, 5vw, 1.6rem);
   }
 
   .nav {
@@ -2052,19 +2083,22 @@ address a,
 
   .statement-section.muted,
   .cta-section,
+  .blog-entry,
   .resource-grid article,
   .home-spotlight,
   .resource-spotlight,
   .partner-spotlight,
   .partner-principles,
+  .partner-program-grid article,
   .partner-resource-card,
+  .campaign-step-grid article,
   .policy-card,
   .story-support,
   .form-panel,
   .submission-guidelines,
   .contact-panel,
   .notice {
-    padding-inline: 1.15rem;
+    padding-inline: var(--card-padding-compact);
   }
 }
 
