@@ -238,9 +238,12 @@ button:focus-visible {
 .resource-spotlight,
 .resource-grid,
 .partnership-intro,
+.partnership-card-section,
 .partner-spotlight,
 .partner-programs,
 .partnership-matters,
+.chapter-detail-section,
+.chapter-event-section,
 .partner-resource-section,
 .policy-section,
 .category-browser,
@@ -263,7 +266,10 @@ button:focus-visible {
 .resource-grid > *,
 .partner-spotlight > *,
 .partner-spotlight-grid > *,
+.partnership-card-grid > *,
 .partnership-matters > *,
+.chapter-detail-grid > *,
+.event-gallery > *,
 .partner-program-grid > *,
 .partner-resource-grid > *,
 .policy-section > *,
@@ -352,8 +358,11 @@ h3 {
 .resource-grid p,
 .partner-copy p,
 .partner-brochure-callout p,
+.partnership-card p,
 .partner-program-grid p,
 .partnership-matters p,
+.chapter-detail-section p,
+.chapter-event-section p,
 .partner-resource-card small,
 .form-panel p,
 .submission-guidelines li,
@@ -427,9 +436,13 @@ address a:focus-visible {
 .resource-spotlight,
 .resource-grid article,
 .partner-spotlight,
+.partnership-card,
 .partner-principles,
 .partner-brochure-callout,
 .partner-program-grid article,
+.chapter-detail-panel,
+.event-highlight-card,
+.event-gallery figure,
 .partner-resource-card,
 .form-panel,
 .submission-guidelines,
@@ -744,9 +757,16 @@ address a:focus-visible {
 
 .leadership-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 390px));
   gap: clamp(1rem, 2vw, 1.4rem);
   align-items: stretch;
+  justify-content: center;
+}
+
+.leadership-pyramid .leader-card-featured {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(100%, 390px);
 }
 
 .leader-card {
@@ -782,7 +802,7 @@ address a:focus-visible {
 }
 
 .leader-card[href*="jonathan"] img {
-  object-position: center 20%;
+  object-position: center 28%;
 }
 
 .leader-card[href*="carey"] img {
@@ -1566,6 +1586,84 @@ address a:focus-visible {
   border-bottom: 1px solid var(--line);
 }
 
+.partnership-card-section {
+  padding-top: 2.5rem;
+  padding-bottom: 5.5rem;
+}
+
+.partnership-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2.4vw, 1.5rem);
+  margin-top: 2rem;
+}
+
+.partnership-card {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr);
+  gap: clamp(1rem, 2.2vw, 1.35rem);
+  align-items: center;
+  min-height: 100%;
+  padding: var(--card-padding-compact);
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 12px 34px rgba(74, 62, 45, 0.07);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.partnership-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--line-strong);
+  background: rgba(255, 250, 241, 0.82);
+  box-shadow: var(--shadow-soft);
+}
+
+.partnership-card-media {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  padding: 0.6rem;
+  border: 1px solid rgba(89, 96, 68, 0.16);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 241, 0.9), rgba(239, 227, 209, 0.5)),
+    var(--soft-white);
+}
+
+.partnership-card-media img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  object-fit: contain;
+}
+
+.partnership-card-body {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.partnership-card-body strong {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(1.85rem, 3vw, 2.35rem);
+  line-height: 1.02;
+}
+
+.partnership-card-body span:not(.eyebrow):not(.partnership-card-link) {
+  color: var(--bark);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.partnership-card-link {
+  display: inline-flex;
+  width: fit-content;
+  color: var(--moss);
+  font-weight: 800;
+  line-height: 1.2;
+  border-bottom: 1px solid currentColor;
+}
+
 .partner-spotlight {
   display: grid;
   gap: 2.2rem;
@@ -1737,6 +1835,135 @@ address a:focus-visible {
   font-size: 0.92rem;
   line-height: 1.55;
   overflow-wrap: anywhere;
+}
+
+.chapter-hero {
+  max-width: 1000px;
+}
+
+.chapter-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(12rem, 18rem);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.chapter-logo-card {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: clamp(0.9rem, 2vw, 1.3rem);
+  border: 1px solid rgba(89, 96, 68, 0.18);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 241, 0.92), rgba(239, 227, 209, 0.52)),
+    var(--soft-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.chapter-logo-card img {
+  aspect-ratio: 1;
+  width: 100%;
+  object-fit: contain;
+}
+
+.chapter-detail-section {
+  padding-top: 1rem;
+}
+
+.chapter-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+}
+
+.chapter-detail-grid h2,
+.chapter-event-section h2 {
+  font-size: clamp(2.4rem, 5vw, 3.45rem);
+}
+
+.chapter-detail-panel {
+  display: grid;
+  gap: 1rem;
+  padding: var(--card-padding);
+  border-radius: 8px;
+}
+
+.chapter-detail-panel p {
+  margin: 0;
+}
+
+.chapter-detail-panel .button {
+  justify-self: start;
+  margin-top: 0.35rem;
+}
+
+.chapter-event-section {
+  padding-top: 2rem;
+  padding-bottom: 5.5rem;
+}
+
+.event-highlight-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.62fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+  padding: var(--card-padding-roomy);
+  border-radius: 8px;
+}
+
+.event-date {
+  margin: 0.8rem 0 0;
+  color: var(--moss);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.event-copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.event-copy p {
+  margin: 0;
+}
+
+.event-gallery-wrap {
+  margin-top: 3rem;
+}
+
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.9rem, 2vw, 1.2rem);
+  margin-top: 2rem;
+}
+
+.event-gallery figure {
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+  overflow: hidden;
+  margin: 0;
+  padding: 0.7rem;
+  border-radius: 8px;
+}
+
+.event-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 6px;
+  object-fit: cover;
+  background: rgba(239, 227, 209, 0.5);
+}
+
+.event-gallery figcaption {
+  color: var(--bark);
+  font-size: 0.88rem;
+  line-height: 1.45;
 }
 
 .form-panel {
@@ -2031,6 +2258,10 @@ address a,
   .split-section,
   .leadership-grid,
   .profile-hero-grid,
+  .partnership-card-grid,
+  .chapter-hero-grid,
+  .chapter-detail-grid,
+  .event-highlight-card,
   .partner-spotlight-grid,
   .partnership-matters,
   .category-browser,
@@ -2115,8 +2346,22 @@ address a,
     margin-inline: auto;
   }
 
+  .leadership-pyramid .leader-card-featured {
+    justify-self: stretch;
+    width: 100%;
+  }
+
   .leader-card-body {
     min-height: 0;
+  }
+
+  .partnership-card {
+    max-width: 660px;
+    margin-inline: auto;
+  }
+
+  .event-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .profile-hero {
@@ -2252,6 +2497,18 @@ address a,
     width: 100%;
   }
 
+  .partnership-card {
+    grid-template-columns: 1fr;
+  }
+
+  .partnership-card-media {
+    width: min(100%, 12rem);
+  }
+
+  .event-gallery {
+    grid-template-columns: 1fr;
+  }
+
   .spotlight-actions {
     display: grid;
   }
@@ -2277,9 +2534,12 @@ address a,
   .resource-spotlight,
   .resource-grid,
   .partnership-intro,
+  .partnership-card-section,
   .partner-spotlight,
   .partner-programs,
   .partnership-matters,
+  .chapter-detail-section,
+  .chapter-event-section,
   .partner-resource-section,
   .policy-section,
   .category-browser,
@@ -2301,8 +2561,12 @@ address a,
   .home-spotlight,
   .resource-spotlight,
   .partner-spotlight,
+  .partnership-card,
   .partner-principles,
   .partner-program-grid article,
+  .chapter-detail-panel,
+  .event-highlight-card,
+  .event-gallery figure,
   .partner-resource-card,
   .campaign-step-grid article,
   .policy-card,
