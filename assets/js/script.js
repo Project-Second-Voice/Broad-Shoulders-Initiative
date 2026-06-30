@@ -144,7 +144,37 @@ function renderStorySupportNote() {
   );
 }
 
+function initLeadershipCarousel() {
+  const panel = document.querySelector("[data-leadership-carousel]");
+  const slides = [...document.querySelectorAll("[data-leadership-slide]")];
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (!panel || slides.length < 2 || reduceMotion.matches) return;
+
+  let activeIndex = Math.max(0, slides.findIndex((slide) => slide.classList.contains("is-active")));
+
+  function setActiveSlide(index) {
+    slides.forEach((slide, slideIndex) => {
+      const active = slideIndex === index;
+      slide.classList.toggle("is-active", active);
+      slide.setAttribute("aria-hidden", String(!active));
+      slide.querySelectorAll("a, button").forEach((control) => {
+        control.tabIndex = active ? 0 : -1;
+      });
+      if ("inert" in slide) slide.inert = !active;
+    });
+  }
+
+  panel.classList.add("is-rotating");
+  setActiveSlide(activeIndex);
+
+  window.setInterval(() => {
+    activeIndex = (activeIndex + 1) % slides.length;
+    setActiveSlide(activeIndex);
+  }, 6200);
+}
+
 renderStoryArchive();
 renderLatestStories();
 renderStoryDetailTags();
 renderStorySupportNote();
+initLeadershipCarousel();
