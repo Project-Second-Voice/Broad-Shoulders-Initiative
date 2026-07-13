@@ -1,6 +1,7 @@
-// To add a future story, append one object to BSI_STORIES with a single clear
-// `category` value and relevant `tags`. The Stories page filters, "All Stories"
-// view, and homepage latest stories update without extra page edits.
+// To add a story, append one object with a single clear `category`, relevant
+// `tags`, and a `collection`. Existing entries default to `community`.
+// Stories Beyond the Game entries use `collection: "beyond-the-game"` and
+// `author: "Jonathan Wang"`. Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
     title: "Burnout",

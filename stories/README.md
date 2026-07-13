@@ -9,6 +9,12 @@ Use this folder for published Broad Shoulders Initiative story or blog pages.
 3. Add the story metadata to `../assets/js/stories-data.js` so the archive, filters, and homepage update together.
 4. Review the story for privacy, consent, identifying details, and safety before publishing.
 
+## Story Collections
+
+- Use `collection: "community"` for founder reflections, anonymous submissions, and community stories. Existing entries without a collection value also default to Community Voices.
+- Use `collection: "beyond-the-game"` for Stories Beyond the Game and `author: "Jonathan Wang"` for the author metadata.
+- Both collections share the same story objects, archive cards, filters, detail-page structure, metadata, resources, and related-story patterns. Do not create a separate renderer for athlete stories.
+
 ## Published Stories
 
 - `support-can-exist-in-many-forms.html`: published story slug for "Support Can Exist in Many Forms."

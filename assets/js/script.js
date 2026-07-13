@@ -70,12 +70,30 @@ function makeArchiveCard(story) {
 function renderStoryArchive() {
   const archive = document.querySelector("[data-story-archive]");
   const filters = document.querySelector("[data-story-filters]");
-  if (!archive || !stories.length) return;
+  if (!archive) return;
 
-  archive.innerHTML = stories.map(makeArchiveCard).join("");
+  const collection = archive.dataset.storyArchive || "community";
+  const collectionStories = stories.filter((story) => (story.collection || "community") === collection);
+
+  if (!collectionStories.length) {
+    const emptyTitle = archive.dataset.emptyTitle || "More stories are coming soon.";
+    const emptyMessage = archive.dataset.emptyMessage || "This collection is still growing.";
+    archive.innerHTML = `
+      <div class="story-empty-state" role="status">
+        <p class="eyebrow">Growing Collection</p>
+        <h2>${escapeHtml(emptyTitle)}</h2>
+        <p>${escapeHtml(emptyMessage)}</p>
+      </div>
+    `;
+    document.querySelector("[data-story-filter-region]")?.setAttribute("hidden", "");
+    return;
+  }
+
+  archive.innerHTML = collectionStories.map(makeArchiveCard).join("");
 
   if (!filters) return;
-  const tagsWithStories = [...new Set(stories.flatMap((story) => story.tags || []).filter(Boolean))];
+  document.querySelector("[data-story-filter-region]")?.removeAttribute("hidden");
+  const tagsWithStories = [...new Set(collectionStories.flatMap((story) => story.tags || []).filter(Boolean))];
   filters.innerHTML = [
     '<button class="tag-filter active" type="button" data-filter="all" aria-pressed="true">All Stories</button>',
     ...tagsWithStories.map((tag) => `<button class="tag-filter" type="button" data-filter="${escapeHtml(tag)}" aria-pressed="false">${escapeHtml(tag)}</button>`),
