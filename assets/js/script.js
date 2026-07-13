@@ -122,6 +122,7 @@ function renderLatestStories() {
   if (!latest || !stories.length) return;
 
   latest.innerHTML = stories
+    .filter((story) => (story.collection || "community") === "community")
     .slice(0, 3)
     .map(
       (story) => `

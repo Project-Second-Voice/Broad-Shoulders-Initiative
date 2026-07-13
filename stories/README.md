@@ -17,6 +17,7 @@ Use this folder for published Broad Shoulders Initiative story or blog pages.
 
 ## Published Stories
 
+- `lewis-hamilton.html`: first Stories Beyond the Game article, "Lewis Hamilton's Story with Mental Health."
 - `support-can-exist-in-many-forms.html`: published story slug for "Support Can Exist in Many Forms."
 - `pressure-and-performance.html`: published story slug for "Pressure and Performance."
 - `average.html`: published story slug for "Average."

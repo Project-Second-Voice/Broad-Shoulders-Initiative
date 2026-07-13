@@ -1473,6 +1473,10 @@ address a:focus-visible {
   object-position: center center;
 }
 
+.story-detail-hero.source-square img {
+  width: min(100%, 554px);
+}
+
 .story-detail-hero.illustration-feature {
   background: linear-gradient(135deg, rgba(255, 250, 241, 0.76), rgba(216, 192, 164, 0.24));
 }
@@ -1502,6 +1506,14 @@ address a:focus-visible {
   font-size: 0.92rem;
   font-style: italic;
   line-height: 1.55;
+}
+
+.image-credit {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--moss);
+  font-style: normal;
+  font-weight: 700;
 }
 
 .story-body {
@@ -1537,6 +1549,38 @@ address a:focus-visible {
   font-size: 1.2rem;
   font-style: italic;
   line-height: 1.5;
+}
+
+.series-editorial-note {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0 0 0.35rem;
+  padding: 1.25rem 1.4rem;
+  border-left: 3px solid rgba(89, 96, 68, 0.4);
+  background: rgba(255, 250, 241, 0.48);
+}
+
+.series-editorial-note .eyebrow,
+.series-editorial-note h2,
+.series-editorial-note p {
+  margin: 0;
+}
+
+.series-editorial-note h2 {
+  font-size: 2rem;
+}
+
+.series-editorial-note p:last-child {
+  color: var(--bark);
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.story-reflection {
+  border-color: rgba(89, 96, 68, 0.34);
+  background:
+    linear-gradient(135deg, rgba(255, 250, 241, 0.78), rgba(239, 227, 209, 0.68)),
+    var(--parchment);
 }
 
 .content-note {

@@ -4,6 +4,24 @@
 // `author: "Jonathan Wang"`. Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Lewis Hamilton's Story with Mental Health",
+    slug: "lewis-hamilton",
+    url: "stories/lewis-hamilton.html",
+    collection: "beyond-the-game",
+    category: "Athletics",
+    tags: ["Mental Health", "Resilience", "Identity", "Performance Pressure", "Growth & Reflection"],
+    author: "Jonathan Wang",
+    date: "07/12/26",
+    readTime: "4–5 min read",
+    excerpt:
+      "Seven-time Formula 1 World Champion Lewis Hamilton has spoken openly about depression, racism, and the pressures of competing at the highest level. His journey reminds us that even the world's greatest athletes must prioritize mental health.",
+    image: "assets/images/lewis-hamilton-mental-health.jpg",
+    imageClass: "square-preview",
+    imageAlt: "Sir Lewis Hamilton looking downward in reflective focus while wearing his Formula 1 team jacket and earpiece",
+    imageWidth: 554,
+    imageHeight: 554,
+  },
+  {
     title: "Burnout",
     slug: "burnout",
     url: "stories/burnout.html",
