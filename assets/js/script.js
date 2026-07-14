@@ -163,6 +163,25 @@ function renderStorySupportNote() {
   );
 }
 
+function initReadingProgress() {
+  const progress = document.querySelector("[data-reading-progress] span");
+  const article = document.querySelector(".story-detail");
+  if (!progress || !article) return;
+
+  function updateProgress() {
+    const articleTop = article.offsetTop;
+    const articleHeight = article.offsetHeight;
+    const viewportHeight = window.innerHeight;
+    const distance = Math.max(articleHeight - viewportHeight, 1);
+    const amount = Math.min(Math.max((window.scrollY - articleTop) / distance, 0), 1);
+    progress.style.transform = `scaleX(${amount})`;
+  }
+
+  updateProgress();
+  window.addEventListener("scroll", updateProgress, { passive: true });
+  window.addEventListener("resize", updateProgress);
+}
+
 function initLeadershipCarousel() {
   const panel = document.querySelector("[data-leadership-carousel]");
   const slides = [...document.querySelectorAll("[data-leadership-slide]")];
@@ -196,4 +215,5 @@ renderStoryArchive();
 renderLatestStories();
 renderStoryDetailTags();
 renderStorySupportNote();
+initReadingProgress();
 initLeadershipCarousel();

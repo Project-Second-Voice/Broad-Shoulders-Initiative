@@ -12,11 +12,12 @@ Use this folder for published Broad Shoulders Initiative story or blog pages.
 ## Story Collections
 
 - Use `collection: "community"` for founder reflections, anonymous submissions, and community stories. Existing entries without a collection value also default to Community Voices.
-- Use `collection: "beyond-the-game"` for Stories Beyond the Game and `author: "Jonathan Wang"` for the author metadata.
+- Use `collection: "beyond-the-game"` for Stories Beyond the Game and the byline assigned to the individual story for its author metadata.
 - Both collections share the same story objects, archive cards, filters, detail-page structure, metadata, resources, and related-story patterns. Do not create a separate renderer for athlete stories.
 
 ## Published Stories
 
+- `cristiano-ronaldo-father.html`: Stories Beyond the Game article, "Cristiano Ronaldo: The Father Who Never Saw the Dream."
 - `lewis-hamilton.html`: first Stories Beyond the Game article, "Lewis Hamilton's Story with Mental Health."
 - `support-can-exist-in-many-forms.html`: published story slug for "Support Can Exist in Many Forms."
 - `pressure-and-performance.html`: published story slug for "Pressure and Performance."

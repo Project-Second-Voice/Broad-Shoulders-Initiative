@@ -1,8 +1,25 @@
 // To add a story, append one object with a single clear `category`, relevant
 // `tags`, and a `collection`. Existing entries default to `community`.
-// Stories Beyond the Game entries use `collection: "beyond-the-game"` and
-// `author: "Jonathan Wang"`. Both archives use the same card and filter system.
+// Stories Beyond the Game entries use `collection: "beyond-the-game"`.
+// Both archives use the same card and filter system.
 window.BSI_STORIES = [
+  {
+    title: "Cristiano Ronaldo: The Father Who Never Saw the Dream",
+    slug: "cristiano-ronaldo-father",
+    url: "stories/cristiano-ronaldo-father.html",
+    collection: "beyond-the-game",
+    category: "Stories Beyond the Game",
+    tags: ["Football", "Family", "Addiction", "Grief", "Fatherhood", "Resilience"],
+    author: "Broad Shoulders Initiative",
+    date: "07/13/26",
+    readTime: "5–6 min read",
+    excerpt:
+      "From growing up in poverty and navigating his father's alcoholism to becoming the father he always wished he had, Cristiano Ronaldo's story reaches far beyond football.",
+    image: "assets/images/cristiano-ronaldo-father.png",
+    imageAlt: "Cristiano Ronaldo during his professional football career, representing resilience, family, and perseverance beyond the game.",
+    imageWidth: 638,
+    imageHeight: 480,
+  },
   {
     title: "Lewis Hamilton's Story with Mental Health",
     slug: "lewis-hamilton",
