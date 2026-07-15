@@ -17,6 +17,7 @@ Use this folder for published Broad Shoulders Initiative story or blog pages.
 
 ## Published Stories
 
+- `lionel-messi-believing-in-yourself.html`: Stories Beyond the Game article, "Lionel Messi's Journey With Believing in Yourself."
 - `cristiano-ronaldo-father.html`: Stories Beyond the Game article, "Cristiano Ronaldo: The Father Who Never Saw the Dream."
 - `lewis-hamilton.html`: first Stories Beyond the Game article, "Lewis Hamilton's Story with Mental Health."
 - `support-can-exist-in-many-forms.html`: published story slug for "Support Can Exist in Many Forms."

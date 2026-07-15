@@ -4,6 +4,23 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Lionel Messi's Journey With Believing in Yourself",
+    slug: "lionel-messi-believing-in-yourself",
+    url: "stories/lionel-messi-believing-in-yourself.html",
+    collection: "beyond-the-game",
+    category: "Stories Beyond the Game",
+    tags: ["Football", "Growth Hormone Deficiency", "Feeling Different", "Family Sacrifice", "Self-Belief", "Perseverance"],
+    author: "Broad Shoulders Initiative",
+    date: "07/14/26",
+    readTime: "4 min read",
+    excerpt:
+      "Physically smaller than his peers and living with growth hormone deficiency, Lionel Messi relied on his family's sacrifices, left Argentina at 13, and kept believing in his football ability.",
+    image: "assets/images/lionel-messi-believing-in-yourself.png",
+    imageAlt: "Lionel Messi during his early football career.",
+    imageWidth: 2560,
+    imageHeight: 1748,
+  },
+  {
     title: "Cristiano Ronaldo: The Father Who Never Saw the Dream",
     slug: "cristiano-ronaldo-father",
     url: "stories/cristiano-ronaldo-father.html",
