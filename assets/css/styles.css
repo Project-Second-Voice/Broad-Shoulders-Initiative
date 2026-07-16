@@ -2006,6 +2006,22 @@ address a:focus-visible {
   max-width: 760px;
 }
 
+.partner-spotlight-badge {
+  display: inline-flex;
+  width: fit-content;
+  margin: 0 0 1rem;
+  padding: 0.38rem 0.72rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: rgba(239, 227, 209, 0.58);
+  color: var(--moss);
+  font-size: 0.74rem;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .partner-spotlight h2 {
   font-size: 3.2rem;
 }
@@ -2118,6 +2134,20 @@ address a:focus-visible {
 .partnership-matters-visual img {
   width: min(100%, 14.0625rem);
   border-radius: 6px;
+}
+
+.partnership-matters-visual-wide {
+  width: min(100%, 30rem);
+}
+
+.partnership-matters-visual-wide img {
+  width: 100%;
+}
+
+.future-goal-note {
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--moss) !important;
 }
 
 .partnership-matters-copy {
