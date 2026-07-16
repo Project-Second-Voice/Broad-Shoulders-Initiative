@@ -10,7 +10,7 @@ window.BSI_STORIES = [
     collection: "beyond-the-game",
     category: "Stories Beyond the Game",
     tags: ["Football", "Growth Hormone Deficiency", "Feeling Different", "Family Sacrifice", "Self-Belief", "Perseverance"],
-    author: "Broad Shoulders Initiative",
+    author: "Jonathan Wang",
     date: "07/14/26",
     readTime: "4 min read",
     excerpt:
@@ -27,7 +27,7 @@ window.BSI_STORIES = [
     collection: "beyond-the-game",
     category: "Stories Beyond the Game",
     tags: ["Football", "Family", "Addiction", "Grief", "Fatherhood", "Resilience"],
-    author: "Broad Shoulders Initiative",
+    author: "Jonathan Wang",
     date: "07/13/26",
     readTime: "5–6 min read",
     excerpt:
