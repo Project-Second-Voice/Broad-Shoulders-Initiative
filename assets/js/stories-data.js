@@ -4,6 +4,23 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Lamine Yamal: Carrying 304 to the World",
+    slug: "lamine-yamal-carrying-304-to-the-world",
+    url: "stories-beyond-the-game/lamine-yamal-carrying-304-to-the-world/",
+    collection: "beyond-the-game",
+    category: "Stories Beyond the Game",
+    tags: ["Soccer", "Football", "Community", "Identity", "Family", "Perseverance"],
+    author: "Jonathan Wang",
+    date: "07/16/26",
+    readTime: "6–8 min read",
+    excerpt:
+      "How one of football's brightest young stars transformed a simple postal code into a worldwide symbol of identity, gratitude, and pride for the neighborhood that raised him.",
+    image: "assets/images/lamine-yamal-carrying-304-to-the-world.png",
+    imageAlt: "Lamine Yamal celebrating a goal while making his signature 304 hand gesture representing Rocafonda.",
+    imageWidth: 1920,
+    imageHeight: 1080,
+  },
+  {
     title: "Lionel Messi's Journey With Believing in Yourself",
     slug: "lionel-messi-believing-in-yourself",
     url: "stories/lionel-messi-believing-in-yourself.html",
