@@ -4,6 +4,23 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Luka Modrić: The Boy Who Chose Hope Over War",
+    slug: "luka-modric-the-boy-who-chose-hope-over-war",
+    url: "stories-beyond-the-game/luka-modric-the-boy-who-chose-hope-over-war/",
+    collection: "beyond-the-game",
+    category: "Stories Beyond the Game",
+    tags: ["Football", "War", "Resilience", "Mental Health", "Family", "Perspective", "Croatia"],
+    author: "Jonathan Wang",
+    date: "07/17/26",
+    readTime: "3 min read",
+    excerpt:
+      "Long before Luka Modrić lifted the Ballon d'Or and became one of football's greatest midfielders, he was a six-year-old refugee growing up during the Croatian War of Independence. His story is one of resilience, perspective, and finding hope through football when everything else seemed uncertain.",
+    image: "assets/images/luka-modric-the-boy-who-chose-hope-over-war.png",
+    imageAlt: "A young Luka Modrić wearing football medals and standing beside a trophy after a youth competition in Croatia.",
+    imageWidth: 1335,
+    imageHeight: 1190,
+  },
+  {
     title: "Lamine Yamal: Carrying 304 to the World",
     slug: "lamine-yamal-carrying-304-to-the-world",
     url: "stories-beyond-the-game/lamine-yamal-carrying-304-to-the-world/",
