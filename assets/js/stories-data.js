@@ -4,6 +4,23 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Andrés Iniesta: The Silent Battle Behind Football's Greatest Moment",
+    slug: "andres-iniesta-the-silent-battle-behind-footballs-greatest-moment",
+    url: "stories-beyond-the-game/andres-iniesta-the-silent-battle-behind-footballs-greatest-moment/",
+    collection: "beyond-the-game",
+    category: "Stories Beyond the Game",
+    tags: ["Football", "Mental Health", "Depression", "Resilience", "Grief", "FC Barcelona", "Spain"],
+    author: "Jonathan Wang",
+    date: "07/18/26",
+    readTime: "3 min read",
+    excerpt:
+      "Despite winning the World Cup and becoming one of football's greatest midfielders, Andrés Iniesta privately battled depression. Discover the story behind his resilience, grief, and courage to speak openly about mental health.",
+    image: "assets/images/andres-iniesta-the-silent-battle-behind-footballs-greatest-moment.png",
+    imageAlt: "Andrés Iniesta celebrating after scoring Spain's winning goal in the 2010 FIFA World Cup Final.",
+    imageWidth: 1920,
+    imageHeight: 1080,
+  },
+  {
     title: "Luka Modrić: The Boy Who Chose Hope Over War",
     slug: "luka-modric-the-boy-who-chose-hope-over-war",
     url: "stories-beyond-the-game/luka-modric-the-boy-who-chose-hope-over-war/",
