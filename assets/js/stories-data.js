@@ -4,6 +4,25 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Christian Pulisic: The Battle No One Could See",
+    slug: "christian-pulisic-battle-no-one-could-see",
+    url: "stories-beyond-the-game/christian-pulisic-battle-no-one-could-see/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Athlete Mental Health",
+    tags: ["Football", "Depression", "Isolation", "Grief", "Therapy", "Resilience"],
+    athlete: "Christian Pulisic",
+    author: "Jonathan Wang",
+    date: "07/19/26",
+    readTime: "4 min read",
+    excerpt:
+      "Christian Pulisic became the face of American soccer while privately battling depression, grief, isolation, injuries, and immense pressure. His decision to seek therapy showed that asking for help can be an act of strength.",
+    image: "assets/images/christian-pulisic-battle-no-one-could-see.jpg",
+    imageAlt: "Close-up of Christian Pulisic wearing a red United States national team warm-up jacket.",
+    imageWidth: 1920,
+    imageHeight: 1280,
+  },
+  {
     title: "Andrés Iniesta: The Silent Battle Behind Football's Greatest Moment",
     slug: "andres-iniesta-the-silent-battle-behind-footballs-greatest-moment",
     url: "stories-beyond-the-game/andres-iniesta-the-silent-battle-behind-footballs-greatest-moment/",
