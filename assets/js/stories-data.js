@@ -4,6 +4,25 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Marc Cucurella: The World Cup Meant Less Than Watching His Son Smile",
+    slug: "marc-cucurella-autism-awareness",
+    url: "stories-beyond-the-game/marc-cucurella-autism-awareness/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Stories Beyond the Game",
+    tags: ["Football", "Autism Awareness", "Fatherhood", "Family", "Parenting", "Resilience", "Mental Health"],
+    athlete: "Marc Cucurella",
+    author: "Jonathan Wang",
+    date: "07/20/26",
+    readTime: "5–6 min read",
+    excerpt:
+      "Marc Cucurella became a 2026 FIFA World Cup champion, but his greatest journey has been raising his son Mateo after an autism diagnosis. Discover the story behind one of football's most inspiring fathers.",
+    image: "assets/images/marc-cucurella-autism-awareness.png",
+    imageAlt: "Marc Cucurella celebrating after Spain won the 2026 FIFA World Cup.",
+    imageWidth: 1122,
+    imageHeight: 1402,
+  },
+  {
     title: "Christian Pulisic: The Battle No One Could See",
     slug: "christian-pulisic-battle-no-one-could-see",
     url: "stories-beyond-the-game/christian-pulisic-battle-no-one-could-see/",

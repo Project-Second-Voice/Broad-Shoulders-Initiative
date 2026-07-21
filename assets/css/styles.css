@@ -1468,6 +1468,13 @@ address a:focus-visible {
   object-position: center center;
 }
 
+.story-detail-hero.uncropped-feature img {
+  width: 100%;
+  max-height: none;
+  height: auto;
+  object-fit: contain;
+}
+
 .story-detail-hero.product-feature {
   background: linear-gradient(135deg, rgba(255, 250, 241, 0.78), rgba(216, 192, 164, 0.22));
 }
