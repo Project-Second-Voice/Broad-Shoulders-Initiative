@@ -4,6 +4,25 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "The Face the World Judged: Vinícius Jr.'s Fight Against Racism",
+    slug: "vinicius-jr-fight-against-racism",
+    url: "stories-beyond-the-game/vinicius-jr-fight-against-racism/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Stories Beyond the Game",
+    tags: ["Football", "Real Madrid", "Brazil", "Racism", "Mental Health", "Resilience", "Identity", "Stories Beyond the Game"],
+    athlete: "Vinícius Júnior",
+    author: "Jonathan Wang",
+    date: "07/22/26",
+    readTime: "4 min read",
+    excerpt:
+      "Vinícius Jr. endured racist abuse while becoming one of football's best players—and turned that pain into a fight for accountability and lasting change.",
+    image: "assets/images/vinicius-jr-fight-against-racism.png",
+    imageAlt: "Vinícius Júnior training with the Brazil national football team on a grass pitch.",
+    imageWidth: 2048,
+    imageHeight: 1365,
+  },
+  {
     title: "Marc Cucurella: The World Cup Meant Less Than Watching His Son Smile",
     slug: "marc-cucurella-autism-awareness",
     url: "stories-beyond-the-game/marc-cucurella-autism-awareness/",
