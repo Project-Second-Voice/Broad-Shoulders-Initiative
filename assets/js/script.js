@@ -182,6 +182,50 @@ function initReadingProgress() {
   window.addEventListener("resize", updateProgress);
 }
 
+function initStoryFadeUps() {
+  const items = [...document.querySelectorAll(".fade-up")];
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (!items.length || reduceMotion.matches || !("IntersectionObserver" in window)) return;
+
+  document.body.classList.add("has-motion");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    { rootMargin: "0px 0px -10% 0px", threshold: 0.08 }
+  );
+
+  items.forEach((item) => observer.observe(item));
+}
+
+function initStoryShare() {
+  const copyButton = document.querySelector("[data-copy-story-link]");
+  const status = document.querySelector(".story-copy-status");
+  if (!copyButton || !status) return;
+
+  copyButton.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      status.textContent = "Link copied.";
+    } catch {
+      const input = document.createElement("input");
+      input.value = window.location.href;
+      input.setAttribute("readonly", "");
+      input.style.position = "fixed";
+      input.style.opacity = "0";
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand("copy");
+      input.remove();
+      status.textContent = "Link copied.";
+    }
+  });
+}
+
 function initLeadershipCarousel() {
   const panel = document.querySelector("[data-leadership-carousel]");
   const slides = [...document.querySelectorAll("[data-leadership-slide]")];
@@ -216,4 +260,6 @@ renderLatestStories();
 renderStoryDetailTags();
 renderStorySupportNote();
 initReadingProgress();
+initStoryFadeUps();
+initStoryShare();
 initLeadershipCarousel();

@@ -4,6 +4,26 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Jude Bellingham: From England's Scapegoat to the Nation's Hope",
+    slug: "jude-bellingham-from-englands-scapegoat-to-the-nations-hope",
+    url: "stories-beyond-the-game/jude-bellingham-from-englands-scapegoat-to-the-nations-hope/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Stories Beyond the Game",
+    tags: ["Football", "Mental Health", "Resilience", "England", "Jude Bellingham", "Identity", "Pressure"],
+    athlete: "Jude Bellingham",
+    author: "Jonathan Wang",
+    date: "07/25/26",
+    readTime: "6 min read",
+    excerpt:
+      "From Euro 2024 scapegoat to England's World Cup 2026 hope, Jude Bellingham's story reveals how confidence can conceal vulnerability—and how resilience can restore joy.",
+    image: "assets/images/jude-bellingham-england-2026.png",
+    imageClass: "square-preview",
+    imageAlt: "Jude Bellingham wearing an England jacket and a FIFA World Cup 2026 medal after representing his country.",
+    imageWidth: 554,
+    imageHeight: 554,
+  },
+  {
     title: "The Face the World Judged: Vinícius Jr.'s Fight Against Racism",
     slug: "vinicius-jr-fight-against-racism",
     url: "stories-beyond-the-game/vinicius-jr-fight-against-racism/",
