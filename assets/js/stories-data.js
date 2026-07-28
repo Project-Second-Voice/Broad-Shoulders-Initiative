@@ -4,6 +4,25 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Ferran Torres: From a Bottomless Pit to the Top of the World",
+    slug: "ferran-torres-bottomless-pit-world-cup",
+    url: "stories-beyond-the-game/ferran-torres-bottomless-pit-world-cup/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Football",
+    tags: ["Football", "Mental Health", "Therapy", "Resilience", "Spain", "World Cup", "Confidence", "Redemption"],
+    athlete: "Ferran Torres",
+    author: "Jonathan Wang",
+    date: "07/27/26",
+    readTime: "4 min read",
+    excerpt:
+      "How Ferran Torres went from losing all confidence and seeking therapy to scoring the winning goal in the 2026 FIFA World Cup Final for Spain.",
+    image: "assets/images/ferran-torres-bottomless-pit-world-cup.png",
+    imageAlt: "Ferran Torres smiling and biting his gold medal after Spain won the 2026 FIFA World Cup.",
+    imageWidth: 1440,
+    imageHeight: 960,
+  },
+  {
     title: "Jude Bellingham: From England's Scapegoat to the Nation's Hope",
     slug: "jude-bellingham-from-englands-scapegoat-to-the-nations-hope",
     url: "stories-beyond-the-game/jude-bellingham-from-englands-scapegoat-to-the-nations-hope/",
