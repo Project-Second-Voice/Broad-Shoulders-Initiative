@@ -4,6 +4,25 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Erling Haaland: Why Football's Biggest Superstar Never Acts Like One",
+    slug: "erling-haaland-humble-upbringing",
+    url: "stories-beyond-the-game/erling-haaland-humble-upbringing/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Football",
+    tags: ["Football", "Humility", "Family", "Upbringing", "Emotional Control", "Discipline", "Mental Strength", "Norway"],
+    athlete: "Erling Haaland",
+    author: "Jonathan Wang",
+    date: "07/28/26",
+    readTime: "5 min read",
+    excerpt:
+      "Behind Erling Haaland's intimidating presence is a calm personality shaped by family, discipline, Norwegian culture, and a childhood far removed from football celebrity.",
+    image: "assets/images/erling-haaland-humble-upbringing.png",
+    imageAlt: "Erling Haaland celebrating on the pitch in a black Norway kit.",
+    imageWidth: 1200,
+    imageHeight: 800,
+  },
+  {
     title: "Ferran Torres: From a Bottomless Pit to the Top of the World",
     slug: "ferran-torres-bottomless-pit-world-cup",
     url: "stories-beyond-the-game/ferran-torres-bottomless-pit-world-cup/",
