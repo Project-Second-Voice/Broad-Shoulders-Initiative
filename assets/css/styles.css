@@ -1734,6 +1734,39 @@ address a:focus-visible {
   filter: saturate(0.88) contrast(1.03);
 }
 
+.alysa-liu-hero-image {
+  object-position: 50% 20%;
+}
+
+@media (min-width: 861px) {
+  .story-immersive-hero .alysa-liu-hero-content {
+    width: min(620px, 52vw);
+  }
+
+  .story-immersive-hero .alysa-liu-hero-content h1 {
+    font-size: clamp(3.6rem, 5vw, 4.9rem);
+  }
+}
+
+@media (max-width: 600px) {
+  body[data-story-slug="alysa-liu-loving-figure-skating-again"] .story-immersive-hero {
+    align-items: flex-start;
+    min-height: 0;
+    padding-top: calc(100vw + 2rem);
+  }
+
+  body[data-story-slug="alysa-liu-loving-figure-skating-again"] .alysa-liu-hero-image {
+    height: 100vw;
+    object-position: 50% 20%;
+  }
+
+  body[data-story-slug="alysa-liu-loving-figure-skating-again"] .story-immersive-shade {
+    background:
+      linear-gradient(180deg, rgba(24, 24, 20, 0.08) 0, rgba(24, 24, 20, 0.22) 32vw, rgba(24, 24, 20, 0.98) 100vw, rgba(24, 24, 20, 0.98) 100%),
+      linear-gradient(90deg, rgba(24, 24, 20, 0.4), rgba(24, 24, 20, 0.08));
+  }
+}
+
 .story-immersive-shade {
   z-index: -1;
   background:
