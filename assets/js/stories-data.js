@@ -4,6 +4,25 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Rodri: The Footballer Who Was Told He Wasn't Good Enough",
+    slug: "rodri-footballer-who-wasnt-good-enough",
+    url: "stories-beyond-the-game/rodri-footballer-who-wasnt-good-enough/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Football",
+    tags: ["Football", "Humility", "Perseverance", "Rejection", "Education", "Intelligence", "Mental Strength", "Identity", "Spain"],
+    athlete: "Rodri",
+    author: "Jonathan Wang",
+    date: "08/03/26",
+    readTime: "4 min read",
+    excerpt:
+      "Rejected at 17 for not being athletic enough, Rodri trusted his intelligence, education, and understanding of football on his path to the Ballon d'Or.",
+    image: "assets/images/rodri-footballer-who-wasnt-good-enough.png",
+    imageAlt: "Rodri kissing the 2024 Ballon d’Or trophy while wearing a black tuxedo at the awards ceremony.",
+    imageWidth: 992,
+    imageHeight: 559,
+  },
+  {
     title: "Erling Haaland: Why Football's Biggest Superstar Never Acts Like One",
     slug: "erling-haaland-humble-upbringing",
     url: "stories-beyond-the-game/erling-haaland-humble-upbringing/",
