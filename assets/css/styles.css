@@ -1774,6 +1774,12 @@ address a:focus-visible {
     linear-gradient(90deg, rgba(24, 24, 20, 0.68), rgba(24, 24, 20, 0.08) 74%);
 }
 
+.harry-kane-hero-shade {
+  background:
+    linear-gradient(180deg, rgba(24, 24, 20, 0.04) 5%, rgba(24, 24, 20, 0.2) 44%, rgba(24, 24, 20, 0.86) 100%),
+    linear-gradient(90deg, rgba(24, 24, 20, 0.78), rgba(24, 24, 20, 0.1) 86%);
+}
+
 .story-immersive-content {
   width: min(900px, 100%);
 }
@@ -3337,6 +3343,23 @@ address a,
 
   .story-immersive-image {
     object-position: 50% 18%;
+  }
+
+  body[data-story-slug="harry-kane-rejection-resilience"] .story-immersive-hero {
+    align-items: flex-start;
+    min-height: 0;
+    padding-top: calc(62vw + 2rem);
+  }
+
+  body[data-story-slug="harry-kane-rejection-resilience"] .harry-kane-hero-image {
+    height: 62vw;
+    object-position: 50% 28%;
+  }
+
+  body[data-story-slug="harry-kane-rejection-resilience"] .harry-kane-hero-shade {
+    background:
+      linear-gradient(180deg, rgba(24, 24, 20, 0.02) 0, rgba(24, 24, 20, 0.12) 35vw, rgba(24, 24, 20, 0.98) 62vw, rgba(24, 24, 20, 0.98) 100%),
+      linear-gradient(90deg, rgba(24, 24, 20, 0.12), rgba(24, 24, 20, 0.02));
   }
 
   .story-immersive-hero h1 {
