@@ -4,6 +4,25 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Harry Kane: The Boy Everyone Overlooked Who Refused to Give Up",
+    slug: "harry-kane-rejection-resilience",
+    url: "stories-beyond-the-game/harry-kane-rejection-resilience/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Football",
+    tags: ["Football", "Rejection", "Resilience", "Perseverance", "Self-Belief", "Discipline", "England"],
+    athlete: "Harry Kane",
+    author: "Jonathan Wang",
+    date: "08/07/26",
+    readTime: "4 min read",
+    excerpt:
+      "Before becoming England's record goalscorer, Harry Kane was released, overlooked, and repeatedly sent on loan. He turned rejection into motivation.",
+    image: "assets/images/harry-kane-rejection-resilience.jpg",
+    imageAlt: "Harry Kane wearing England’s white kit and captain’s armband as he applauds supporters after a match.",
+    imageWidth: 1920,
+    imageHeight: 1079,
+  },
+  {
     title: "Rodri: The Footballer Who Was Told He Wasn't Good Enough",
     slug: "rodri-footballer-who-wasnt-good-enough",
     url: "stories-beyond-the-game/rodri-footballer-who-wasnt-good-enough/",
