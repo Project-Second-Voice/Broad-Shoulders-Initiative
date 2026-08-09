@@ -1780,6 +1780,12 @@ address a:focus-visible {
     linear-gradient(90deg, rgba(24, 24, 20, 0.78), rgba(24, 24, 20, 0.1) 86%);
 }
 
+.bukayo-saka-hero-shade {
+  background:
+    linear-gradient(180deg, rgba(24, 24, 20, 0.03) 4%, rgba(24, 24, 20, 0.22) 44%, rgba(24, 24, 20, 0.9) 100%),
+    linear-gradient(90deg, rgba(24, 24, 20, 0.7), rgba(24, 24, 20, 0.08) 82%);
+}
+
 .story-immersive-content {
   width: min(900px, 100%);
 }
@@ -3359,6 +3365,23 @@ address a,
   body[data-story-slug="harry-kane-rejection-resilience"] .harry-kane-hero-shade {
     background:
       linear-gradient(180deg, rgba(24, 24, 20, 0.02) 0, rgba(24, 24, 20, 0.12) 35vw, rgba(24, 24, 20, 0.98) 62vw, rgba(24, 24, 20, 0.98) 100%),
+      linear-gradient(90deg, rgba(24, 24, 20, 0.12), rgba(24, 24, 20, 0.02));
+  }
+
+  body[data-story-slug="bukayo-saka-the-penalty-that-didnt-define-him"] .story-immersive-hero {
+    align-items: flex-start;
+    min-height: 0;
+    padding-top: calc(66.7vw + 2rem);
+  }
+
+  body[data-story-slug="bukayo-saka-the-penalty-that-didnt-define-him"] .bukayo-saka-hero-image {
+    height: 66.7vw;
+    object-position: 50% 30%;
+  }
+
+  body[data-story-slug="bukayo-saka-the-penalty-that-didnt-define-him"] .bukayo-saka-hero-shade {
+    background:
+      linear-gradient(180deg, rgba(24, 24, 20, 0.02) 0, rgba(24, 24, 20, 0.12) 38vw, rgba(24, 24, 20, 0.98) 66.7vw, rgba(24, 24, 20, 0.98) 100%),
       linear-gradient(90deg, rgba(24, 24, 20, 0.12), rgba(24, 24, 20, 0.02));
   }
 
