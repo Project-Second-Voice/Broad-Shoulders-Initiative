@@ -4,6 +4,25 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Bukayo Saka: The Penalty That Didn’t Define Him",
+    slug: "bukayo-saka-the-penalty-that-didnt-define-him",
+    url: "stories/bukayo-saka-the-penalty-that-didnt-define-him/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Football",
+    tags: ["Football", "Resilience", "Mental Strength", "Racism", "Forgiveness", "Identity", "Growth", "Leadership", "England"],
+    athlete: "Bukayo Saka",
+    author: "Jonathan Wang",
+    date: "08/09/26",
+    readTime: "4 min read",
+    excerpt:
+      "After Euro 2020 heartbreak and racist abuse, Bukayo Saka chose resilience over bitterness and grew into one of England’s trusted leaders.",
+    image: "assets/images/bukayo-saka-the-penalty-that-didnt-define-him.jpg",
+    imageAlt: "Bukayo Saka smiling in an England jacket while holding a UEFA EURO 2020 Star of the Match trophy.",
+    imageWidth: 1920,
+    imageHeight: 1281,
+  },
+  {
     title: "Harry Kane: The Boy Everyone Overlooked Who Refused to Give Up",
     slug: "harry-kane-rejection-resilience",
     url: "stories-beyond-the-game/harry-kane-rejection-resilience/",
