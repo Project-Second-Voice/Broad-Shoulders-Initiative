@@ -4,6 +4,25 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Son Heung Min's Story",
+    slug: "son-heung-min-story",
+    url: "stories-beyond-the-game/son-heung-min-story/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Football",
+    tags: ["Football", "Pressure", "Discipline", "Resilience", "Humility", "Leadership", "South Korea"],
+    athlete: "Son Heung-Min",
+    author: "Jonathan Wang",
+    date: "08/10/26",
+    readTime: "4 min read",
+    excerpt:
+      "Son Heung-Min carried the expectations of his father, his country, and himself while turning discipline into resilience without losing his humility or joy.",
+    image: "assets/images/son-heung-min-story-1280.jpg",
+    imageAlt: "Son Heung-Min seated on the South Korea bench during an international football match.",
+    imageWidth: 1280,
+    imageHeight: 720,
+  },
+  {
     title: "Bukayo Saka: The Penalty That Didn’t Define Him",
     slug: "bukayo-saka-the-penalty-that-didnt-define-him",
     url: "stories/bukayo-saka-the-penalty-that-didnt-define-him/",
