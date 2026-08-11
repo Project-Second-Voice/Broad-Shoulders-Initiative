@@ -1786,6 +1786,16 @@ address a:focus-visible {
     linear-gradient(90deg, rgba(24, 24, 20, 0.7), rgba(24, 24, 20, 0.08) 82%);
 }
 
+.son-heung-min-hero-image {
+  object-position: 50% 42%;
+}
+
+.son-heung-min-hero-shade {
+  background:
+    linear-gradient(180deg, rgba(24, 24, 20, 0.03) 4%, rgba(24, 24, 20, 0.2) 44%, rgba(24, 24, 20, 0.92) 100%),
+    linear-gradient(90deg, rgba(24, 24, 20, 0.76), rgba(24, 24, 20, 0.08) 84%);
+}
+
 .story-immersive-content {
   width: min(900px, 100%);
 }
@@ -1986,11 +1996,24 @@ details.story-sources {
   font-size: 0.86rem;
 }
 
-.story-sources ol {
+.story-sources ol,
+.story-sources ul {
   display: grid;
   gap: 0.85rem;
   margin: 1.5rem 0 0;
   padding-left: 1.25rem;
+}
+
+.story-sources h3 {
+  margin: 1.75rem 0 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  line-height: 1.15;
+}
+
+.story-sources h3 + ul {
+  margin-top: 0.85rem;
 }
 
 .story-sources li {
@@ -3383,6 +3406,23 @@ address a,
     background:
       linear-gradient(180deg, rgba(24, 24, 20, 0.02) 0, rgba(24, 24, 20, 0.12) 38vw, rgba(24, 24, 20, 0.98) 66.7vw, rgba(24, 24, 20, 0.98) 100%),
       linear-gradient(90deg, rgba(24, 24, 20, 0.12), rgba(24, 24, 20, 0.02));
+  }
+
+  body[data-story-slug="son-heung-min-story"] .story-immersive-hero {
+    align-items: flex-start;
+    min-height: 0;
+    padding-top: calc(56.25vw + 2rem);
+  }
+
+  body[data-story-slug="son-heung-min-story"] .son-heung-min-hero-image {
+    height: 56.25vw;
+    object-position: 50% 50%;
+  }
+
+  body[data-story-slug="son-heung-min-story"] .son-heung-min-hero-shade {
+    background:
+      linear-gradient(180deg, rgba(24, 24, 20, 0.02) 0, rgba(24, 24, 20, 0.1) 32vw, rgba(24, 24, 20, 0.98) 56.25vw, rgba(24, 24, 20, 0.98) 100%),
+      linear-gradient(90deg, rgba(24, 24, 20, 0.1), rgba(24, 24, 20, 0.02));
   }
 
   .story-immersive-hero h1 {
