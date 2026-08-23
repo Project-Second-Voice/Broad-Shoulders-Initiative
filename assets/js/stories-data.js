@@ -4,6 +4,25 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Willian Pacho: Turning Scraps Into a Feast",
+    slug: "willian-pacho-turning-scraps-into-a-feast",
+    url: "stories-beyond-the-game/willian-pacho-turning-scraps-into-a-feast/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Football",
+    tags: ["Football", "Grief", "Mental Health", "Family", "Resilience", "Poverty", "Perseverance", "Ecuador", "Loss", "Depression"],
+    athlete: "Willian Pacho",
+    author: "Jonathan Wang",
+    date: "08/22/26",
+    readTime: "8 min read",
+    excerpt:
+      "After losing his mother on the morning of his professional debut, Willian Pacho learned to keep moving through grief, depression, injuries, and isolation while carrying her lessons with him.",
+    image: "assets/images/willian-pacho-turning-scraps-into-a-feast-1280.jpg",
+    imageAlt: "Willian Pacho standing on the pitch in a Paris Saint-Germain warm-up kit before a Ligue 1 match.",
+    imageWidth: 1280,
+    imageHeight: 853,
+  },
+  {
     title: "Son Heung Min's Story",
     slug: "son-heung-min-story",
     url: "stories-beyond-the-game/son-heung-min-story/",
