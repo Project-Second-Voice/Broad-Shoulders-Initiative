@@ -1796,6 +1796,16 @@ address a:focus-visible {
     linear-gradient(90deg, rgba(24, 24, 20, 0.76), rgba(24, 24, 20, 0.08) 84%);
 }
 
+.willian-pacho-hero-image {
+  object-position: 50% 48%;
+}
+
+.willian-pacho-hero-shade {
+  background:
+    linear-gradient(180deg, rgba(24, 24, 20, 0.02) 4%, rgba(24, 24, 20, 0.2) 44%, rgba(24, 24, 20, 0.94) 100%),
+    linear-gradient(90deg, rgba(24, 24, 20, 0.76), rgba(24, 24, 20, 0.08) 84%);
+}
+
 .story-immersive-content {
   width: min(900px, 100%);
 }
@@ -3422,6 +3432,23 @@ address a,
   body[data-story-slug="son-heung-min-story"] .son-heung-min-hero-shade {
     background:
       linear-gradient(180deg, rgba(24, 24, 20, 0.02) 0, rgba(24, 24, 20, 0.1) 32vw, rgba(24, 24, 20, 0.98) 56.25vw, rgba(24, 24, 20, 0.98) 100%),
+      linear-gradient(90deg, rgba(24, 24, 20, 0.1), rgba(24, 24, 20, 0.02));
+  }
+
+  body[data-story-slug="willian-pacho-turning-scraps-into-a-feast"] .story-immersive-hero {
+    align-items: flex-start;
+    min-height: 0;
+    padding-top: calc(66.67vw + 2rem);
+  }
+
+  body[data-story-slug="willian-pacho-turning-scraps-into-a-feast"] .willian-pacho-hero-image {
+    height: 66.67vw;
+    object-position: 50% 50%;
+  }
+
+  body[data-story-slug="willian-pacho-turning-scraps-into-a-feast"] .willian-pacho-hero-shade {
+    background:
+      linear-gradient(180deg, rgba(24, 24, 20, 0.02) 0, rgba(24, 24, 20, 0.1) 39vw, rgba(24, 24, 20, 0.98) 66.67vw, rgba(24, 24, 20, 0.98) 100%),
       linear-gradient(90deg, rgba(24, 24, 20, 0.1), rgba(24, 24, 20, 0.02));
   }
 
