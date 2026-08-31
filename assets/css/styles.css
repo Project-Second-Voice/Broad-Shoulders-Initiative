@@ -1806,6 +1806,27 @@ address a:focus-visible {
     linear-gradient(90deg, rgba(24, 24, 20, 0.76), rgba(24, 24, 20, 0.08) 84%);
 }
 
+.franck-ribery-hero-image {
+  object-position: 50% 34%;
+}
+
+.franck-ribery-hero-shade {
+  background:
+    linear-gradient(180deg, rgba(24, 24, 20, 0.02) 4%, rgba(24, 24, 20, 0.2) 44%, rgba(24, 24, 20, 0.94) 100%),
+    linear-gradient(90deg, rgba(24, 24, 20, 0.76), rgba(24, 24, 20, 0.08) 84%);
+}
+
+.pull-quote cite {
+  display: block;
+  margin-top: 0.65rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .story-immersive-content {
   width: min(900px, 100%);
 }
@@ -3449,6 +3470,23 @@ address a,
   body[data-story-slug="willian-pacho-turning-scraps-into-a-feast"] .willian-pacho-hero-shade {
     background:
       linear-gradient(180deg, rgba(24, 24, 20, 0.02) 0, rgba(24, 24, 20, 0.1) 39vw, rgba(24, 24, 20, 0.98) 66.67vw, rgba(24, 24, 20, 0.98) 100%),
+      linear-gradient(90deg, rgba(24, 24, 20, 0.1), rgba(24, 24, 20, 0.02));
+  }
+
+  body[data-story-slug="franck-ribery-the-scars-he-refused-to-hide"] .story-immersive-hero {
+    align-items: flex-start;
+    min-height: 0;
+    padding-top: calc(56.25vw + 2rem);
+  }
+
+  body[data-story-slug="franck-ribery-the-scars-he-refused-to-hide"] .franck-ribery-hero-image {
+    height: 56.25vw;
+    object-position: 50% 50%;
+  }
+
+  body[data-story-slug="franck-ribery-the-scars-he-refused-to-hide"] .franck-ribery-hero-shade {
+    background:
+      linear-gradient(180deg, rgba(24, 24, 20, 0.02) 0, rgba(24, 24, 20, 0.1) 32vw, rgba(24, 24, 20, 0.98) 56.25vw, rgba(24, 24, 20, 0.98) 100%),
       linear-gradient(90deg, rgba(24, 24, 20, 0.1), rgba(24, 24, 20, 0.02));
   }
 

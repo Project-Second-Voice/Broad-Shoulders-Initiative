@@ -4,6 +4,25 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Franck Ribéry: The Scars He Refused to Hide",
+    slug: "franck-ribery-the-scars-he-refused-to-hide",
+    url: "stories-beyond-the-game/franck-ribery-the-scars-he-refused-to-hide/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Football",
+    tags: ["Football", "Bullying", "Self-Acceptance", "Body Image", "Resilience", "Mental Strength", "Identity", "Adversity", "France"],
+    athlete: "Franck Ribéry",
+    author: "Jonathan Wang",
+    date: "08/31/26",
+    readTime: "5 min read",
+    excerpt:
+      "Before millions knew Franck Ribéry for his football, strangers noticed the scars across his face. He learned that accepting himself mattered more than changing what others saw.",
+    image: "assets/images/franck-ribery-the-scars-he-refused-to-hide-1280.jpg",
+    imageAlt: "Franck Ribéry, former France and Bayern Munich footballer, whose facial scars became a defining part of his public identity.",
+    imageWidth: 1280,
+    imageHeight: 720,
+  },
+  {
     title: "Willian Pacho: Turning Scraps Into a Feast",
     slug: "willian-pacho-turning-scraps-into-a-feast",
     url: "stories-beyond-the-game/willian-pacho-turning-scraps-into-a-feast/",
