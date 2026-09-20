@@ -4,6 +4,26 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Neymar Jr.: The Weight of Expectations",
+    slug: "neymar-jr",
+    url: "stories-beyond-the-game/neymar-jr/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Football",
+    tags: ["Football", "Injury", "Pressure", "Identity", "Resilience", "Mental Health", "Recovery", "Brazil"],
+    athlete: "Neymar Jr.",
+    author: "Jonathan Wang",
+    date: "09/19/26",
+    readTime: "7 min read",
+    excerpt:
+      "Neymar Jr. spent his career carrying extraordinary expectations while repeated injuries interrupted the moments when he was expected to prove himself.",
+    image: "assets/images/neymar-jr-expectations-injury-mental-health-1280.jpg",
+    imageClass: "portrait-preview",
+    imageAlt: "Neymar Jr. walking on the pitch in a white Santos number 10 shirt and captain's armband.",
+    imageWidth: 1280,
+    imageHeight: 1600,
+  },
+  {
     title: "Franck Ribéry: The Scars He Refused to Hide",
     slug: "franck-ribery-the-scars-he-refused-to-hide",
     url: "stories-beyond-the-game/franck-ribery-the-scars-he-refused-to-hide/",
