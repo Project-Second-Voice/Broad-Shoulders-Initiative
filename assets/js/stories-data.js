@@ -4,6 +4,25 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "David Beckham: When the World Turned Against Him",
+    slug: "david-beckham",
+    url: "stories-beyond-the-game/david-beckham/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Football",
+    tags: ["Football", "Mental Health", "Bullying", "Pressure", "Resilience", "England"],
+    athlete: "David Beckham",
+    author: "Jonathan Wang",
+    date: "10/05/26",
+    readTime: "4 min read",
+    excerpt: "At 23, one mistake turned David Beckham from a national treasure into a scapegoat. Football became the place where he felt safe again.",
+    image: "assets/images/david-beckham-1280.jpg",
+    imageClass: "david-beckham-preview",
+    imageAlt: "David Beckham wearing England's white football shirt on the pitch.",
+    imageWidth: 1280,
+    imageHeight: 720,
+  },
+  {
     title: "Neymar Jr.: The Weight of Expectations",
     slug: "neymar-jr",
     url: "stories-beyond-the-game/neymar-jr/",

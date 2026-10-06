@@ -1300,6 +1300,10 @@ address a:focus-visible {
   object-fit: cover;
 }
 
+.blog-entry img.david-beckham-preview {
+  object-position: 20% 50%;
+}
+
 .blog-entry img.portrait-preview {
   object-fit: contain;
   background: rgba(255, 250, 241, 0.62);
@@ -1824,6 +1828,43 @@ address a:focus-visible {
   background:
     linear-gradient(180deg, rgba(24, 24, 20, 0.02) 4%, rgba(24, 24, 20, 0.2) 44%, rgba(24, 24, 20, 0.94) 100%),
     linear-gradient(90deg, rgba(24, 24, 20, 0.76), rgba(24, 24, 20, 0.08) 84%);
+}
+
+.david-beckham-hero-image {
+  object-position: 50% 35%;
+}
+
+@media (min-width: 861px) {
+  .story-immersive-hero .david-beckham-hero-content {
+    width: min(620px, 52vw);
+    margin-left: auto;
+  }
+
+  .story-immersive-hero .david-beckham-hero-content h1 {
+    font-size: clamp(3.5rem, 5.2vw, 4.8rem);
+  }
+
+  .david-beckham-hero-shade {
+    background:
+      linear-gradient(180deg, rgba(24, 24, 20, 0.04) 0, rgba(24, 24, 20, 0.14) 45%, rgba(24, 24, 20, 0.78) 100%),
+      linear-gradient(90deg, rgba(24, 24, 20, 0.08), rgba(24, 24, 20, 0.82) 52%, rgba(24, 24, 20, 0.86));
+  }
+}
+
+@media (max-width: 860px) {
+  body[data-story-slug="david-beckham"] .story-immersive-hero {
+    align-items: flex-start;
+    min-height: 0;
+    padding-top: calc(56.25vw + 2rem);
+  }
+
+  body[data-story-slug="david-beckham"] .david-beckham-hero-image {
+    height: 56.25vw;
+  }
+
+  body[data-story-slug="david-beckham"] .david-beckham-hero-shade {
+    background: linear-gradient(180deg, rgba(24, 24, 20, 0.02) 0, rgba(24, 24, 20, 0.1) 32vw, rgba(24, 24, 20, 0.98) 56.25vw, rgba(24, 24, 20, 0.98) 100%);
+  }
 }
 
 .pull-quote cite {
