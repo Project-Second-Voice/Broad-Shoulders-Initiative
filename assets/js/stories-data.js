@@ -4,6 +4,25 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Raphinha: The Footballer Who Almost Gave Up on His Dream",
+    slug: "raphinha-mental-health-story",
+    url: "stories-beyond-the-game/raphinha-mental-health-story/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Football",
+    tags: ["Football", "Mental Health", "Pressure", "Self-Doubt", "Resilience", "Identity", "Psychological Support", "Brazil"],
+    athlete: "Raphinha",
+    author: "Jonathan Wang",
+    date: "10/18/26",
+    readTime: "5 min read",
+    excerpt: "Rejected as a teenager and drained by pressure at Barcelona, Raphinha nearly walked away from football. Family support and psychological care helped him find confidence and a sense of self beyond the game.",
+    image: "assets/images/raphinha-mental-health-story-768.jpg",
+    imageClass: "square-preview",
+    imageAlt: "Raphinha in a Barcelona kit, raising one fist and pointing across the pitch during a match.",
+    imageWidth: 768,
+    imageHeight: 768,
+  },
+  {
     title: "David Beckham: When the World Turned Against Him",
     slug: "david-beckham",
     url: "stories-beyond-the-game/david-beckham/",

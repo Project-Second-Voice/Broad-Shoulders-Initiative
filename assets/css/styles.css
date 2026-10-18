@@ -1753,6 +1753,23 @@ address a:focus-visible {
 }
 
 @media (max-width: 600px) {
+  body[data-story-slug="raphinha-mental-health-story"] .story-immersive-hero {
+    align-items: flex-start;
+    min-height: 0;
+    padding-top: calc(100vw + 2rem);
+  }
+
+  body[data-story-slug="raphinha-mental-health-story"] .raphinha-hero-image {
+    height: 100vw;
+    object-position: 50% 20%;
+  }
+
+  body[data-story-slug="raphinha-mental-health-story"] .story-immersive-shade {
+    background:
+      linear-gradient(180deg, rgba(24, 24, 20, 0.08) 0, rgba(24, 24, 20, 0.22) 32vw, rgba(24, 24, 20, 0.98) 100vw, rgba(24, 24, 20, 0.98) 100%),
+      linear-gradient(90deg, rgba(24, 24, 20, 0.4), rgba(24, 24, 20, 0.08));
+  }
+
   body[data-story-slug="alysa-liu-loving-figure-skating-again"] .story-immersive-hero {
     align-items: flex-start;
     min-height: 0;
