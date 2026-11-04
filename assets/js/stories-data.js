@@ -4,6 +4,24 @@
 // Both archives use the same card and filter system.
 window.BSI_STORIES = [
   {
+    title: "Dele Alli: The Pain Behind the Smile",
+    slug: "dele-alli-the-pain-behind-the-smile",
+    url: "stories-beyond-the-game/dele-alli-the-pain-behind-the-smile/",
+    collection: "beyond-the-game",
+    section: "Stories Beyond the Game",
+    category: "Football",
+    tags: ["Football", "Mental Health", "Childhood Trauma", "Abuse", "Addiction", "Identity", "Recovery", "England"],
+    athlete: "Dele Alli",
+    author: "Jonathan Wang",
+    date: "11/03/26",
+    readTime: "7 min read",
+    excerpt: "Dele Alli carried childhood trauma behind his rise at Tottenham. He later spoke openly about addiction, mental health, rehabilitation, and recovery.",
+    image: "assets/images/dele-alli-the-pain-behind-the-smile.png",
+    imageAlt: "Dele Alli speaking during an interview, wearing a black cap and green jacket.",
+    imageWidth: 1600,
+    imageHeight: 900,
+  },
+  {
     title: "Raphinha: The Footballer Who Almost Gave Up on His Dream",
     slug: "raphinha-mental-health-story",
     url: "stories-beyond-the-game/raphinha-mental-health-story/",
