@@ -4204,3 +4204,147 @@ section {
 .leadership-feature-panel.is-rotating + .leadership-controls {
   display: flex;
 }
+
+/* Kevin Love Fund campaign */
+.klf-campaign {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.86fr);
+  gap: clamp(1.75rem, 4vw, 3.25rem);
+  align-items: start;
+  padding-block: clamp(1.5rem, 4vw, 3rem) clamp(3.5rem, 7vw, 5.5rem);
+}
+.klf-campaign-visual {
+  grid-column: 1 / -1;
+  margin: 0;
+  background: #002248;
+  box-shadow: var(--shadow-soft);
+}
+.klf-campaign-visual img {
+  width: 100%;
+  height: auto;
+}
+.klf-campaign h2 {
+  max-width: 12ch;
+  font-size: clamp(2.8rem, 4.5vw, 4.1rem);
+}
+.klf-campaign .campaign-lead {
+  margin-top: 1.4rem;
+}
+.klf-campaign-quote {
+  margin-top: 1.5rem;
+  padding-left: 1.1rem;
+  border-left: 3px solid var(--moss);
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.klf-campaign-quote a {
+  display: inline-block;
+  color: var(--moss);
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.klf-campaign-card {
+  min-height: 0;
+  padding: clamp(1.5rem, 3.2vw, 2.5rem);
+}
+.klf-campaign-card strong {
+  display: block;
+  font-size: clamp(2.4rem, 3.7vw, 3.35rem);
+}
+.klf-campaign-card .campaign-format-list {
+  margin-bottom: 1.5rem;
+}
+.klf-share-button {
+  gap: 0.65rem;
+}
+.klf-campaign-card .klf-form-note {
+  max-width: 48ch;
+  margin: 0.85rem 0 0;
+  color: var(--bark);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.klf-social {
+  width: var(--content-width);
+  margin: 0 auto clamp(3.5rem, 7vw, 5rem);
+  padding-top: clamp(2.5rem, 5vw, 4rem);
+  border-top: 1px solid var(--line);
+}
+.klf-social .section-heading {
+  margin-bottom: 1.6rem;
+}
+.klf-social .section-heading h2 {
+  margin-bottom: 0.5rem;
+}
+.klf-social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.klf-social-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  min-height: 245px;
+  padding: clamp(1.4rem, 3vw, 2rem);
+  border: 1px solid var(--line-strong);
+  background: var(--soft-white);
+  color: var(--bark);
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+.klf-social-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--moss);
+  box-shadow: var(--shadow-soft);
+}
+.klf-social-card[target="_blank"]:not(.button)::after {
+  content: none;
+}
+.klf-social-card:focus-visible {
+  outline: 3px solid var(--moss);
+  outline-offset: 4px;
+}
+.klf-social-card strong {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  line-height: 1.1;
+}
+.klf-social-action {
+  margin-top: auto;
+  padding-top: 0.8rem;
+  color: var(--moss);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (max-width: 860px) {
+  .klf-campaign {
+    grid-template-columns: 1fr;
+  }
+  .klf-campaign-visual {
+    grid-column: auto;
+  }
+}
+@media (max-width: 560px) {
+  .klf-campaign {
+    gap: 1.6rem;
+  }
+  .klf-campaign h2 {
+    font-size: clamp(2.65rem, 11vw, 3.5rem);
+  }
+  .klf-social-grid {
+    grid-template-columns: 1fr;
+  }
+  .klf-social-card {
+    min-height: 0;
+  }
+  .klf-share-button {
+    width: 100%;
+  }
+}
